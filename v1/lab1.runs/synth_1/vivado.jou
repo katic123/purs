@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Nov  7 21:02:19 2026
+# Process ID: 12908
+# Current directory: C:/Users/Leon/Desktop/katic_leon/v1/lab1.runs/synth_1
+# Command line: vivado.exe -log all_design.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source all_design.tcl
+# Log file: C:/Users/Leon/Desktop/katic_leon/v1/lab1.runs/synth_1/all_design.vds
+# Journal file: C:/Users/Leon/Desktop/katic_leon/v1/lab1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source all_design.tcl -notrace

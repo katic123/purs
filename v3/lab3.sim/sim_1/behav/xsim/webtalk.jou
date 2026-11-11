@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov  9 04:58:14 2026
+# Process ID: 62577
+# Current directory: /home/leon/Desktop/katic_leon/v3/lab3.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/leon/Desktop/katic_leon/v3/lab3.sim/sim_1/behav/xsim/xsim.dir/v3_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/leon/Desktop/katic_leon/v3/lab3.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/leon/Desktop/katic_leon/v3/lab3.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/leon/Desktop/katic_leon/v3/lab3.sim/sim_1/behav/xsim/xsim.dir/v3_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace

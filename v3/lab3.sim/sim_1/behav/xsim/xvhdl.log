@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/ipshared/96fb/led_blinker.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'led_blinker'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/ip/v3_led_blinker_LD2_0/sim/v3_led_blinker_LD2_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'v3_led_blinker_LD2_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/ip/v3_LD3_0/sim/v3_LD3_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'v3_LD3_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/sim/v3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'v3'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/leon/Desktop/katic_leon/v3/lab3.srcs/sources_1/imports/hdl/v3_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'v3_wrapper'

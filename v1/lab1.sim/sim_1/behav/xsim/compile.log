@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Leon/Desktop/katic_leon/v1/lab1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Leon/Desktop/katic_leon/v1/lab1.srcs/sources_1/new/init01.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Leon/Desktop/katic_leon/v1/lab1.srcs/sources_1/new/all_design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'all_design'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Leon/Desktop/katic_leon/v1/lab1.srcs/sources_1/new/led_blinker.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'led_blinker'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Leon/Desktop/katic_leon/v1/lab1.srcs/sim_1/new/all_design_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'all_design_tb'

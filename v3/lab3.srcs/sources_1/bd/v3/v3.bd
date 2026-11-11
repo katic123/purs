@@ -1,0 +1,122 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x7C3F4276DB42197B",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../lab3.gen/sources_1/bd/v3",
+      "name": "v3",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "led_blinker_LD2": "",
+      "led_blinker_LD3": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "v3_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "LD2": {
+        "direction": "O"
+      },
+      "LD3": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "led_blinker_LD2": {
+        "vlnv": "ESDL:user:led_blinker:1.0",
+        "xci_name": "v3_led_blinker_LD2_0",
+        "xci_path": "ip/v3_led_blinker_LD2_0/v3_led_blinker_LD2_0.xci",
+        "inst_hier_path": "led_blinker_LD2",
+        "parameters": {
+          "CLK_divider_width": {
+            "value": "27"
+          }
+        }
+      },
+      "led_blinker_LD3": {
+        "vlnv": "ESDL:user:led_blinker:1.0",
+        "xci_name": "v3_LD3_0",
+        "xci_path": "ip/v3_LD3_0/v3_LD3_0.xci",
+        "inst_hier_path": "led_blinker_LD3",
+        "parameters": {
+          "CLK_divider_width": {
+            "value": "29"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "led_blinker_LD2/clk",
+          "led_blinker_LD3/clk"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset",
+          "led_blinker_LD2/reset",
+          "led_blinker_LD3/reset"
+        ]
+      },
+      "led_blinker_LD2_square": {
+        "ports": [
+          "led_blinker_LD2/square",
+          "LD2"
+        ]
+      },
+      "led_blinker_LD3_square": {
+        "ports": [
+          "led_blinker_LD3/square",
+          "LD3"
+        ]
+      }
+    }
+  }
+}

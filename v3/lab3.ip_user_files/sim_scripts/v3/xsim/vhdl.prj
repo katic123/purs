@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../../lab3.gen/sources_1/bd/v3/ipshared/96fb/led_blinker.vhd" \
+"../../../../lab3.gen/sources_1/bd/v3/ip/v3_led_blinker_LD2_0/sim/v3_led_blinker_LD2_0.vhd" \
+"../../../../lab3.gen/sources_1/bd/v3/ip/v3_LD3_0/sim/v3_LD3_0.vhd" \
+"../../../../lab3.gen/sources_1/bd/v3/sim/v3.vhd" \
+
+nosort

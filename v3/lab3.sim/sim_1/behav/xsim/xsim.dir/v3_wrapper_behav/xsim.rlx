@@ -1,0 +1,12 @@
+
+{ 
+    crc :  11459896970656732498  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 538da11c73174279adeb5ab7bf39eced --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot v3_wrapper_behav xil_defaultlib.v3_wrapper" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:20:35" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/v3_wrapper_behav/xsimk\"   \"xsim.dir/v3_wrapper_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/v3_wrapper_behav/obj/xsim_1.lnx64.o\" -L\"/home/leon/Xilinx/Vivado/2020.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

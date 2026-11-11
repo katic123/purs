@@ -1,0 +1,220 @@
+
+*** Running vivado
+    with args -log v3_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source v3_wrapper.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source v3_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/leon/Desktop/katic_leon/v3/my_cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/leon/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top v3_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 38789
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2339.801 ; gain = 0.000 ; free physical = 158 ; free virtual = 15278
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'v3_wrapper' [/home/leon/Desktop/katic_leon/v3/lab3.srcs/sources_1/imports/hdl/v3_wrapper.vhd:23]
+INFO: [Synth 8-3491] module 'v3' declared at '/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/synth/v3.vhd:14' bound to instance 'v3_i' of component 'v3' [/home/leon/Desktop/katic_leon/v3/lab3.srcs/sources_1/imports/hdl/v3_wrapper.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'v3' [/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/synth/v3.vhd:27]
+INFO: [Synth 8-3491] module 'v3_led_blinker_LD2_0' declared at '/home/leon/Desktop/katic_leon/v3/lab3.runs/synth_1/.Xil/Vivado-38773-arch-t14s/realtime/v3_led_blinker_LD2_0_stub.vhdl:5' bound to instance 'led_blinker_LD2' of component 'v3_led_blinker_LD2_0' [/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/synth/v3.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'v3_led_blinker_LD2_0' [/home/leon/Desktop/katic_leon/v3/lab3.runs/synth_1/.Xil/Vivado-38773-arch-t14s/realtime/v3_led_blinker_LD2_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'v3_LD3_0' declared at '/home/leon/Desktop/katic_leon/v3/lab3.runs/synth_1/.Xil/Vivado-38773-arch-t14s/realtime/v3_LD3_0_stub.vhdl:5' bound to instance 'led_blinker_LD3' of component 'v3_LD3_0' [/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/synth/v3.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'v3_LD3_0' [/home/leon/Desktop/katic_leon/v3/lab3.runs/synth_1/.Xil/Vivado-38773-arch-t14s/realtime/v3_LD3_0_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'v3' (1#1) [/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/synth/v3.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'v3_wrapper' (2#1) [/home/leon/Desktop/katic_leon/v3/lab3.srcs/sources_1/imports/hdl/v3_wrapper.vhd:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2339.801 ; gain = 0.000 ; free physical = 296 ; free virtual = 15248
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2339.801 ; gain = 0.000 ; free physical = 962 ; free virtual = 15913
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2339.801 ; gain = 0.000 ; free physical = 962 ; free virtual = 15913
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2339.801 ; gain = 0.000 ; free physical = 954 ; free virtual = 15905
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/ip/v3_led_blinker_LD2_0/v3_led_blinker_LD2_0/v3_led_blinker_0_0_in_context.xdc] for cell 'v3_i/led_blinker_LD2'
+Finished Parsing XDC File [/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/ip/v3_led_blinker_LD2_0/v3_led_blinker_LD2_0/v3_led_blinker_0_0_in_context.xdc] for cell 'v3_i/led_blinker_LD2'
+Parsing XDC File [/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/ip/v3_LD3_0/v3_LD3_0/v3_led_blinker_1_0_in_context.xdc] for cell 'v3_i/led_blinker_LD3'
+Finished Parsing XDC File [/home/leon/Desktop/katic_leon/v3/lab3.gen/sources_1/bd/v3/ip/v3_LD3_0/v3_LD3_0/v3_led_blinker_1_0_in_context.xdc] for cell 'v3_i/led_blinker_LD3'
+Parsing XDC File [/home/leon/Desktop/katic_leon/v3/lab3.srcs/constrs_1/new/v3.xdc]
+Finished Parsing XDC File [/home/leon/Desktop/katic_leon/v3/lab3.srcs/constrs_1/new/v3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/leon/Desktop/katic_leon/v3/lab3.srcs/constrs_1/new/v3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/v3_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/v3_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/leon/Desktop/katic_leon/v3/lab3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/leon/Desktop/katic_leon/v3/lab3.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2403.832 ; gain = 0.000 ; free physical = 892 ; free virtual = 15845
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2403.832 ; gain = 0.000 ; free physical = 892 ; free virtual = 15845
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 927 ; free virtual = 15883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 927 ; free virtual = 15883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for v3_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for v3_i/led_blinker_LD2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for v3_i/led_blinker_LD3. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 927 ; free virtual = 15883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 926 ; free virtual = 15884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 887 ; free virtual = 15890
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 854 ; free virtual = 15823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 854 ; free virtual = 15823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 834 ; free virtual = 15803
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 831 ; free virtual = 15800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 831 ; free virtual = 15800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 831 ; free virtual = 15800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 831 ; free virtual = 15800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 831 ; free virtual = 15800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 831 ; free virtual = 15800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |v3_led_blinker_LD2_0 |         1|
+|2     |v3_LD3_0             |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |v3_LD3_0_bbox             |     1|
+|2     |v3_led_blinker_LD2_0_bbox |     1|
+|3     |IBUF                      |     2|
+|4     |OBUF                      |     2|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 831 ; free virtual = 15800
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2403.832 ; gain = 0.000 ; free physical = 854 ; free virtual = 15807
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2403.832 ; gain = 64.031 ; free physical = 854 ; free virtual = 15807
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2403.832 ; gain = 0.000 ; free physical = 935 ; free virtual = 15887
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2403.832 ; gain = 0.000 ; free physical = 902 ; free virtual = 15854
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 2403.832 ; gain = 102.969 ; free physical = 962 ; free virtual = 15914
+INFO: [Common 17-1381] The checkpoint '/home/leon/Desktop/katic_leon/v3/lab3.runs/synth_1/v3_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file v3_wrapper_utilization_synth.rpt -pb v3_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  8 23:54:40 2026...

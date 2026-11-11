@@ -1,0 +1,21 @@
+#define N_Pause 10000000
+int main()
+{
+
+    *(volatile unsigned int *)(0xE000A000 + 0x00000204 + 0 * 0x40) = 0x00000080;
+
+    *(volatile unsigned int *)(0xE000A000 + 0x00000208 + 0 * 0x40) = 0x00000080;
+    while (1)
+    {
+        int k;
+
+        *(volatile unsigned int *)(0xE000A000 + 0x00000000 + 0 * 0x8) = 0xFF7F0080;
+        for (k = 0; k < N_Pause; k++)
+            ;
+
+        *(volatile unsigned int *)(0xE000A000 + 0x00000000 + 0 * 0x8) = 0xFF7F0000;
+        for (k = 0; k < N_Pause; k++)
+            ;
+    }
+    return 0;
+}

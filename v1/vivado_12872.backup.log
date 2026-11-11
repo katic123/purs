@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov  5 07:13:17 2026
+# Process ID: 12872
+# Current directory: C:/Users/Leon/Desktop/katic_leon/v1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4112 C:\Users\Leon\Desktop\katic_leon\v1\lab1.xpr
+# Log file: C:/Users/Leon/Desktop/katic_leon/v1/vivado.log
+# Journal file: C:/Users/Leon/Desktop/katic_leon/v1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Leon/Desktop/katic_leon/v1/lab1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Leon/Desktop/katic_leon/v1/lab1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1118.141 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Nov  5 07:13:54 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Leon/Desktop/katic_leon/v1/lab1.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  5 07:15:16 2026...

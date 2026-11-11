@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:/home/leon/Desktop/katic_leon/v4/v4.srcs/constrs_2/new/es.xdc rfile:../../../v4.srcs/constrs_2/new/es.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y9 [get_ports clk]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P16 [get_ports reset]
+set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN T22 [get_ports LD0]

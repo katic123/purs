@@ -1,0 +1,1372 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Mon Nov  9 06:36:44 2026
+| Host         : arch-t14s running 64-bit unknown
+| Command      : report_timing_summary -max_paths 10 -file es_wrapper_timing_summary_routed.rpt -pb es_wrapper_timing_summary_routed.pb -rpx es_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : es_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (1)
+6. checking no_output_delay (1)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (1)
+------------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (1)
+-------------------------------
+ There is 1 port with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      6.133        0.000                      0                   54        0.359        0.000                      0                   54        4.500        0.000                       0                    28  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 6.133        0.000                      0                   54        0.359        0.000                      0                   54        4.500        0.000                       0                    28  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        6.133ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.359ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             6.133ns  (required time - arrival time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        3.397ns  (logic 1.902ns (55.993%)  route 1.495ns (44.007%))
+  Logic Levels:           7  (CARRY4=6 LUT1=1)
+  Clock Path Skew:        -0.497ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.368ns = ( 14.368 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.988ns
+    Clock Pessimism Removal (CPR):    0.123ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.498     4.988    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y40        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y40        FDRE (Prop_fdre_C_Q)         0.456     5.444 f  es_i/led_blinker_0/U0/clk_divider_reg[0]/Q
+                         net (fo=1, routed)           1.495     6.939    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[0]
+    SLICE_X101Y40        LUT1 (Prop_lut1_I0_O)        0.124     7.063 r  es_i/led_blinker_0/U0/clk_divider[0]_i_2/O
+                         net (fo=1, routed)           0.000     7.063    es_i/led_blinker_0/U0/clk_divider[0]_i_2_n_0
+    SLICE_X101Y40        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     7.595 r  es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.595    es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1_n_0
+    SLICE_X101Y41        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.709 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.709    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.823 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.823    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_0
+    SLICE_X101Y43        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.937 r  es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.937    es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1_n_0
+    SLICE_X101Y44        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.051 r  es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.051    es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1_n_0
+    SLICE_X101Y45        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     8.385 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/O[1]
+                         net (fo=1, routed)           0.000     8.385    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_6
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          2.949    14.368    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[21]/C
+                         clock pessimism              0.123    14.491    
+                         clock uncertainty           -0.035    14.456    
+    SLICE_X101Y45        FDRE (Setup_fdre_C_D)        0.062    14.518    es_i/led_blinker_0/U0/clk_divider_reg[21]
+  -------------------------------------------------------------------
+                         required time                         14.518    
+                         arrival time                          -8.385    
+  -------------------------------------------------------------------
+                         slack                                  6.133    
+
+Slack (MET) :             6.135ns  (required time - arrival time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        3.511ns  (logic 2.016ns (57.422%)  route 1.495ns (42.578%))
+  Logic Levels:           8  (CARRY4=7 LUT1=1)
+  Clock Path Skew:        -0.381ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.460ns = ( 14.460 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.988ns
+    Clock Pessimism Removal (CPR):    0.148ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.498     4.988    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y40        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y40        FDRE (Prop_fdre_C_Q)         0.456     5.444 f  es_i/led_blinker_0/U0/clk_divider_reg[0]/Q
+                         net (fo=1, routed)           1.495     6.939    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[0]
+    SLICE_X101Y40        LUT1 (Prop_lut1_I0_O)        0.124     7.063 r  es_i/led_blinker_0/U0/clk_divider[0]_i_2/O
+                         net (fo=1, routed)           0.000     7.063    es_i/led_blinker_0/U0/clk_divider[0]_i_2_n_0
+    SLICE_X101Y40        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     7.595 r  es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.595    es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1_n_0
+    SLICE_X101Y41        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.709 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.709    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.823 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.823    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_0
+    SLICE_X101Y43        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.937 r  es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.937    es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1_n_0
+    SLICE_X101Y44        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.051 r  es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.051    es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1_n_0
+    SLICE_X101Y45        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.165 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.165    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_0
+    SLICE_X101Y46        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     8.499 r  es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1/O[1]
+                         net (fo=1, routed)           0.000     8.499    es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1_n_6
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.040    14.460    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[25]/C
+                         clock pessimism              0.148    14.607    
+                         clock uncertainty           -0.035    14.572    
+    SLICE_X101Y46        FDRE (Setup_fdre_C_D)        0.062    14.634    es_i/led_blinker_0/U0/clk_divider_reg[25]
+  -------------------------------------------------------------------
+                         required time                         14.634    
+                         arrival time                          -8.499    
+  -------------------------------------------------------------------
+                         slack                                  6.135    
+
+Slack (MET) :             6.154ns  (required time - arrival time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[23]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        3.376ns  (logic 1.881ns (55.720%)  route 1.495ns (44.280%))
+  Logic Levels:           7  (CARRY4=6 LUT1=1)
+  Clock Path Skew:        -0.497ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.368ns = ( 14.368 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.988ns
+    Clock Pessimism Removal (CPR):    0.123ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.498     4.988    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y40        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y40        FDRE (Prop_fdre_C_Q)         0.456     5.444 f  es_i/led_blinker_0/U0/clk_divider_reg[0]/Q
+                         net (fo=1, routed)           1.495     6.939    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[0]
+    SLICE_X101Y40        LUT1 (Prop_lut1_I0_O)        0.124     7.063 r  es_i/led_blinker_0/U0/clk_divider[0]_i_2/O
+                         net (fo=1, routed)           0.000     7.063    es_i/led_blinker_0/U0/clk_divider[0]_i_2_n_0
+    SLICE_X101Y40        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     7.595 r  es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.595    es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1_n_0
+    SLICE_X101Y41        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.709 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.709    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.823 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.823    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_0
+    SLICE_X101Y43        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.937 r  es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.937    es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1_n_0
+    SLICE_X101Y44        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.051 r  es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.051    es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1_n_0
+    SLICE_X101Y45        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     8.364 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/O[3]
+                         net (fo=1, routed)           0.000     8.364    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_4
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          2.949    14.368    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+                         clock pessimism              0.123    14.491    
+                         clock uncertainty           -0.035    14.456    
+    SLICE_X101Y45        FDRE (Setup_fdre_C_D)        0.062    14.518    es_i/led_blinker_0/U0/clk_divider_reg[23]
+  -------------------------------------------------------------------
+                         required time                         14.518    
+                         arrival time                          -8.364    
+  -------------------------------------------------------------------
+                         slack                                  6.154    
+
+Slack (MET) :             6.228ns  (required time - arrival time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[22]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        3.302ns  (logic 1.807ns (54.727%)  route 1.495ns (45.273%))
+  Logic Levels:           7  (CARRY4=6 LUT1=1)
+  Clock Path Skew:        -0.497ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.368ns = ( 14.368 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.988ns
+    Clock Pessimism Removal (CPR):    0.123ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.498     4.988    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y40        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y40        FDRE (Prop_fdre_C_Q)         0.456     5.444 f  es_i/led_blinker_0/U0/clk_divider_reg[0]/Q
+                         net (fo=1, routed)           1.495     6.939    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[0]
+    SLICE_X101Y40        LUT1 (Prop_lut1_I0_O)        0.124     7.063 r  es_i/led_blinker_0/U0/clk_divider[0]_i_2/O
+                         net (fo=1, routed)           0.000     7.063    es_i/led_blinker_0/U0/clk_divider[0]_i_2_n_0
+    SLICE_X101Y40        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     7.595 r  es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.595    es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1_n_0
+    SLICE_X101Y41        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.709 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.709    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.823 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.823    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_0
+    SLICE_X101Y43        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.937 r  es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.937    es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1_n_0
+    SLICE_X101Y44        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.051 r  es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.051    es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1_n_0
+    SLICE_X101Y45        CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     8.290 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/O[2]
+                         net (fo=1, routed)           0.000     8.290    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_5
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          2.949    14.368    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[22]/C
+                         clock pessimism              0.123    14.491    
+                         clock uncertainty           -0.035    14.456    
+    SLICE_X101Y45        FDRE (Setup_fdre_C_D)        0.062    14.518    es_i/led_blinker_0/U0/clk_divider_reg[22]
+  -------------------------------------------------------------------
+                         required time                         14.518    
+                         arrival time                          -8.290    
+  -------------------------------------------------------------------
+                         slack                                  6.228    
+
+Slack (MET) :             6.230ns  (required time - arrival time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        3.416ns  (logic 1.921ns (56.238%)  route 1.495ns (43.762%))
+  Logic Levels:           8  (CARRY4=7 LUT1=1)
+  Clock Path Skew:        -0.381ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.460ns = ( 14.460 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.988ns
+    Clock Pessimism Removal (CPR):    0.148ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.498     4.988    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y40        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y40        FDRE (Prop_fdre_C_Q)         0.456     5.444 f  es_i/led_blinker_0/U0/clk_divider_reg[0]/Q
+                         net (fo=1, routed)           1.495     6.939    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[0]
+    SLICE_X101Y40        LUT1 (Prop_lut1_I0_O)        0.124     7.063 r  es_i/led_blinker_0/U0/clk_divider[0]_i_2/O
+                         net (fo=1, routed)           0.000     7.063    es_i/led_blinker_0/U0/clk_divider[0]_i_2_n_0
+    SLICE_X101Y40        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     7.595 r  es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.595    es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1_n_0
+    SLICE_X101Y41        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.709 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.709    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.823 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.823    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_0
+    SLICE_X101Y43        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.937 r  es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.937    es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1_n_0
+    SLICE_X101Y44        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.051 r  es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.051    es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1_n_0
+    SLICE_X101Y45        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.165 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.165    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_0
+    SLICE_X101Y46        CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     8.404 r  es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1/O[2]
+                         net (fo=1, routed)           0.000     8.404    es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1_n_5
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.040    14.460    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[26]/C
+                         clock pessimism              0.148    14.607    
+                         clock uncertainty           -0.035    14.572    
+    SLICE_X101Y46        FDRE (Setup_fdre_C_D)        0.062    14.634    es_i/led_blinker_0/U0/clk_divider_reg[26]
+  -------------------------------------------------------------------
+                         required time                         14.634    
+                         arrival time                          -8.404    
+  -------------------------------------------------------------------
+                         slack                                  6.230    
+
+Slack (MET) :             6.244ns  (required time - arrival time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[20]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        3.286ns  (logic 1.791ns (54.507%)  route 1.495ns (45.493%))
+  Logic Levels:           7  (CARRY4=6 LUT1=1)
+  Clock Path Skew:        -0.497ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.368ns = ( 14.368 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.988ns
+    Clock Pessimism Removal (CPR):    0.123ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.498     4.988    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y40        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y40        FDRE (Prop_fdre_C_Q)         0.456     5.444 f  es_i/led_blinker_0/U0/clk_divider_reg[0]/Q
+                         net (fo=1, routed)           1.495     6.939    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[0]
+    SLICE_X101Y40        LUT1 (Prop_lut1_I0_O)        0.124     7.063 r  es_i/led_blinker_0/U0/clk_divider[0]_i_2/O
+                         net (fo=1, routed)           0.000     7.063    es_i/led_blinker_0/U0/clk_divider[0]_i_2_n_0
+    SLICE_X101Y40        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     7.595 r  es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.595    es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1_n_0
+    SLICE_X101Y41        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.709 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.709    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.823 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.823    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_0
+    SLICE_X101Y43        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.937 r  es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.937    es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1_n_0
+    SLICE_X101Y44        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.051 r  es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.051    es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1_n_0
+    SLICE_X101Y45        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     8.274 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/O[0]
+                         net (fo=1, routed)           0.000     8.274    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_7
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          2.949    14.368    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[20]/C
+                         clock pessimism              0.123    14.491    
+                         clock uncertainty           -0.035    14.456    
+    SLICE_X101Y45        FDRE (Setup_fdre_C_D)        0.062    14.518    es_i/led_blinker_0/U0/clk_divider_reg[20]
+  -------------------------------------------------------------------
+                         required time                         14.518    
+                         arrival time                          -8.274    
+  -------------------------------------------------------------------
+                         slack                                  6.244    
+
+Slack (MET) :             6.246ns  (required time - arrival time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        3.400ns  (logic 1.905ns (56.032%)  route 1.495ns (43.968%))
+  Logic Levels:           8  (CARRY4=7 LUT1=1)
+  Clock Path Skew:        -0.381ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.460ns = ( 14.460 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.988ns
+    Clock Pessimism Removal (CPR):    0.148ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.498     4.988    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y40        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y40        FDRE (Prop_fdre_C_Q)         0.456     5.444 f  es_i/led_blinker_0/U0/clk_divider_reg[0]/Q
+                         net (fo=1, routed)           1.495     6.939    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[0]
+    SLICE_X101Y40        LUT1 (Prop_lut1_I0_O)        0.124     7.063 r  es_i/led_blinker_0/U0/clk_divider[0]_i_2/O
+                         net (fo=1, routed)           0.000     7.063    es_i/led_blinker_0/U0/clk_divider[0]_i_2_n_0
+    SLICE_X101Y40        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     7.595 r  es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.595    es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1_n_0
+    SLICE_X101Y41        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.709 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.709    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.823 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.823    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_0
+    SLICE_X101Y43        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.937 r  es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.937    es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1_n_0
+    SLICE_X101Y44        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.051 r  es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.051    es_i/led_blinker_0/U0/clk_divider_reg[16]_i_1_n_0
+    SLICE_X101Y45        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.165 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.165    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_0
+    SLICE_X101Y46        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     8.388 r  es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1/O[0]
+                         net (fo=1, routed)           0.000     8.388    es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1_n_7
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.040    14.460    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[24]/C
+                         clock pessimism              0.148    14.607    
+                         clock uncertainty           -0.035    14.572    
+    SLICE_X101Y46        FDRE (Setup_fdre_C_D)        0.062    14.634    es_i/led_blinker_0/U0/clk_divider_reg[24]
+  -------------------------------------------------------------------
+                         required time                         14.634    
+                         arrival time                          -8.388    
+  -------------------------------------------------------------------
+                         slack                                  6.246    
+
+Slack (MET) :             6.467ns  (required time - arrival time)
+  Source:                 es_i/led_blinker_0/U0/reset_sync_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[4]/R
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.570ns  (logic 0.518ns (20.154%)  route 2.052ns (79.846%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.499ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.420ns = ( 14.420 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.041ns
+    Clock Pessimism Removal (CPR):    0.123ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.551     5.041    es_i/led_blinker_0/U0/clk
+    SLICE_X100Y46        FDRE                                         r  es_i/led_blinker_0/U0/reset_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y46        FDRE (Prop_fdre_C_Q)         0.518     5.559 r  es_i/led_blinker_0/U0/reset_sync_reg/Q
+                         net (fo=27, routed)          2.052     7.612    es_i/led_blinker_0/U0/reset_sync
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[4]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.000    14.420    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[4]/C
+                         clock pessimism              0.123    14.543    
+                         clock uncertainty           -0.035    14.507    
+    SLICE_X101Y41        FDRE (Setup_fdre_C_R)       -0.429    14.078    es_i/led_blinker_0/U0/clk_divider_reg[4]
+  -------------------------------------------------------------------
+                         required time                         14.078    
+                         arrival time                          -7.612    
+  -------------------------------------------------------------------
+                         slack                                  6.467    
+
+Slack (MET) :             6.467ns  (required time - arrival time)
+  Source:                 es_i/led_blinker_0/U0/reset_sync_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[5]/R
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.570ns  (logic 0.518ns (20.154%)  route 2.052ns (79.846%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.499ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.420ns = ( 14.420 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.041ns
+    Clock Pessimism Removal (CPR):    0.123ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.551     5.041    es_i/led_blinker_0/U0/clk
+    SLICE_X100Y46        FDRE                                         r  es_i/led_blinker_0/U0/reset_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y46        FDRE (Prop_fdre_C_Q)         0.518     5.559 r  es_i/led_blinker_0/U0/reset_sync_reg/Q
+                         net (fo=27, routed)          2.052     7.612    es_i/led_blinker_0/U0/reset_sync
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[5]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.000    14.420    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[5]/C
+                         clock pessimism              0.123    14.543    
+                         clock uncertainty           -0.035    14.507    
+    SLICE_X101Y41        FDRE (Setup_fdre_C_R)       -0.429    14.078    es_i/led_blinker_0/U0/clk_divider_reg[5]
+  -------------------------------------------------------------------
+                         required time                         14.078    
+                         arrival time                          -7.612    
+  -------------------------------------------------------------------
+                         slack                                  6.467    
+
+Slack (MET) :             6.467ns  (required time - arrival time)
+  Source:                 es_i/led_blinker_0/U0/reset_sync_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[6]/R
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.570ns  (logic 0.518ns (20.154%)  route 2.052ns (79.846%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.499ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.420ns = ( 14.420 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.041ns
+    Clock Pessimism Removal (CPR):    0.123ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.551     5.041    es_i/led_blinker_0/U0/clk
+    SLICE_X100Y46        FDRE                                         r  es_i/led_blinker_0/U0/reset_sync_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X100Y46        FDRE (Prop_fdre_C_Q)         0.518     5.559 r  es_i/led_blinker_0/U0/reset_sync_reg/Q
+                         net (fo=27, routed)          2.052     7.612    es_i/led_blinker_0/U0/reset_sync
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[6]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          3.000    14.420    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[6]/C
+                         clock pessimism              0.123    14.543    
+                         clock uncertainty           -0.035    14.507    
+    SLICE_X101Y41        FDRE (Setup_fdre_C_R)       -0.429    14.078    es_i/led_blinker_0/U0/clk_divider_reg[6]
+  -------------------------------------------------------------------
+                         required time                         14.078    
+                         arrival time                          -7.612    
+  -------------------------------------------------------------------
+                         slack                                  6.467    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.359ns  (arrival time - required time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.762ns  (logic 0.355ns (46.558%)  route 0.407ns (53.442%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.298ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.238ns
+    Source Clock Delay      (SCD):    1.721ns
+    Clock Pessimism Removal (CPR):    0.219ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.463     1.721    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y45        FDRE (Prop_fdre_C_Q)         0.141     1.862 r  es_i/led_blinker_0/U0/clk_divider_reg[23]/Q
+                         net (fo=1, routed)           0.407     2.269    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[23]
+    SLICE_X101Y45        CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     2.429 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.429    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_0
+    SLICE_X101Y46        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.054     2.483 r  es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1/O[0]
+                         net (fo=1, routed)           0.000     2.483    es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1_n_7
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.792     2.238    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[24]/C
+                         clock pessimism             -0.219     2.019    
+    SLICE_X101Y46        FDRE (Hold_fdre_C_D)         0.105     2.124    es_i/led_blinker_0/U0/clk_divider_reg[24]
+  -------------------------------------------------------------------
+                         required time                         -2.124    
+                         arrival time                           2.483    
+  -------------------------------------------------------------------
+                         slack                                  0.359    
+
+Slack (MET) :             0.370ns  (arrival time - required time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.773ns  (logic 0.366ns (47.318%)  route 0.407ns (52.682%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.298ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.238ns
+    Source Clock Delay      (SCD):    1.721ns
+    Clock Pessimism Removal (CPR):    0.219ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.463     1.721    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y45        FDRE (Prop_fdre_C_Q)         0.141     1.862 r  es_i/led_blinker_0/U0/clk_divider_reg[23]/Q
+                         net (fo=1, routed)           0.407     2.269    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[23]
+    SLICE_X101Y45        CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     2.429 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.429    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_0
+    SLICE_X101Y46        CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.065     2.494 r  es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1/O[2]
+                         net (fo=1, routed)           0.000     2.494    es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1_n_5
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.792     2.238    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[26]/C
+                         clock pessimism             -0.219     2.019    
+    SLICE_X101Y46        FDRE (Hold_fdre_C_D)         0.105     2.124    es_i/led_blinker_0/U0/clk_divider_reg[26]
+  -------------------------------------------------------------------
+                         required time                         -2.124    
+                         arrival time                           2.494    
+  -------------------------------------------------------------------
+                         slack                                  0.370    
+
+Slack (MET) :             0.395ns  (arrival time - required time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.798ns  (logic 0.391ns (48.968%)  route 0.407ns (51.032%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.298ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.238ns
+    Source Clock Delay      (SCD):    1.721ns
+    Clock Pessimism Removal (CPR):    0.219ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.463     1.721    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y45        FDRE (Prop_fdre_C_Q)         0.141     1.862 r  es_i/led_blinker_0/U0/clk_divider_reg[23]/Q
+                         net (fo=1, routed)           0.407     2.269    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[23]
+    SLICE_X101Y45        CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     2.429 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.429    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_0
+    SLICE_X101Y46        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.090     2.519 r  es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1/O[1]
+                         net (fo=1, routed)           0.000     2.519    es_i/led_blinker_0/U0/clk_divider_reg[26]_i_1_n_6
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.792     2.238    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y46        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[25]/C
+                         clock pessimism             -0.219     2.019    
+    SLICE_X101Y46        FDRE (Hold_fdre_C_D)         0.105     2.124    es_i/led_blinker_0/U0/clk_divider_reg[25]
+  -------------------------------------------------------------------
+                         required time                         -2.124    
+                         arrival time                           2.519    
+  -------------------------------------------------------------------
+                         slack                                  0.395    
+
+Slack (MET) :             0.510ns  (arrival time - required time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.842ns  (logic 0.355ns (42.181%)  route 0.487ns (57.819%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.226ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.203ns
+    Source Clock Delay      (SCD):    1.757ns
+    Clock Pessimism Removal (CPR):    0.219ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.499     1.757    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y41        FDRE (Prop_fdre_C_Q)         0.141     1.898 r  es_i/led_blinker_0/U0/clk_divider_reg[7]/Q
+                         net (fo=1, routed)           0.487     2.385    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[7]
+    SLICE_X101Y41        CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     2.545 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.545    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.054     2.599 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/O[0]
+                         net (fo=1, routed)           0.000     2.599    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_7
+    SLICE_X101Y42        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.757     2.203    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y42        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[8]/C
+                         clock pessimism             -0.219     1.984    
+    SLICE_X101Y42        FDRE (Hold_fdre_C_D)         0.105     2.089    es_i/led_blinker_0/U0/clk_divider_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -2.089    
+                         arrival time                           2.599    
+  -------------------------------------------------------------------
+                         slack                                  0.510    
+
+Slack (MET) :             0.521ns  (arrival time - required time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.853ns  (logic 0.366ns (42.927%)  route 0.487ns (57.073%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.226ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.203ns
+    Source Clock Delay      (SCD):    1.757ns
+    Clock Pessimism Removal (CPR):    0.219ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.499     1.757    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y41        FDRE (Prop_fdre_C_Q)         0.141     1.898 r  es_i/led_blinker_0/U0/clk_divider_reg[7]/Q
+                         net (fo=1, routed)           0.487     2.385    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[7]
+    SLICE_X101Y41        CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     2.545 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.545    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.065     2.610 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/O[2]
+                         net (fo=1, routed)           0.000     2.610    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_5
+    SLICE_X101Y42        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.757     2.203    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y42        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[10]/C
+                         clock pessimism             -0.219     1.984    
+    SLICE_X101Y42        FDRE (Hold_fdre_C_D)         0.105     2.089    es_i/led_blinker_0/U0/clk_divider_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -2.089    
+                         arrival time                           2.610    
+  -------------------------------------------------------------------
+                         slack                                  0.521    
+
+Slack (MET) :             0.545ns  (arrival time - required time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.859ns  (logic 0.355ns (41.307%)  route 0.504ns (58.693%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.210ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.183ns
+    Source Clock Delay      (SCD):    1.755ns
+    Clock Pessimism Removal (CPR):    0.219ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.497     1.755    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y40        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y40        FDRE (Prop_fdre_C_Q)         0.141     1.896 r  es_i/led_blinker_0/U0/clk_divider_reg[2]/Q
+                         net (fo=1, routed)           0.504     2.400    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[2]
+    SLICE_X101Y40        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.160     2.560 r  es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.560    es_i/led_blinker_0/U0/clk_divider_reg[0]_i_1_n_0
+    SLICE_X101Y41        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.054     2.614 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/O[0]
+                         net (fo=1, routed)           0.000     2.614    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_7
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.737     2.183    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[4]/C
+                         clock pessimism             -0.219     1.964    
+    SLICE_X101Y41        FDRE (Hold_fdre_C_D)         0.105     2.069    es_i/led_blinker_0/U0/clk_divider_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -2.069    
+                         arrival time                           2.614    
+  -------------------------------------------------------------------
+                         slack                                  0.545    
+
+Slack (MET) :             0.546ns  (arrival time - required time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.878ns  (logic 0.391ns (44.553%)  route 0.487ns (55.447%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.226ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.203ns
+    Source Clock Delay      (SCD):    1.757ns
+    Clock Pessimism Removal (CPR):    0.219ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.499     1.757    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y41        FDRE (Prop_fdre_C_Q)         0.141     1.898 r  es_i/led_blinker_0/U0/clk_divider_reg[7]/Q
+                         net (fo=1, routed)           0.487     2.385    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[7]
+    SLICE_X101Y41        CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     2.545 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.545    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.090     2.635 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/O[3]
+                         net (fo=1, routed)           0.000     2.635    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_4
+    SLICE_X101Y42        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.757     2.203    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y42        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[11]/C
+                         clock pessimism             -0.219     1.984    
+    SLICE_X101Y42        FDRE (Hold_fdre_C_D)         0.105     2.089    es_i/led_blinker_0/U0/clk_divider_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -2.089    
+                         arrival time                           2.635    
+  -------------------------------------------------------------------
+                         slack                                  0.546    
+
+Slack (MET) :             0.546ns  (arrival time - required time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.878ns  (logic 0.391ns (44.553%)  route 0.487ns (55.447%))
+  Logic Levels:           2  (CARRY4=2)
+  Clock Path Skew:        0.226ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.203ns
+    Source Clock Delay      (SCD):    1.757ns
+    Clock Pessimism Removal (CPR):    0.219ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.499     1.757    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y41        FDRE (Prop_fdre_C_Q)         0.141     1.898 r  es_i/led_blinker_0/U0/clk_divider_reg[7]/Q
+                         net (fo=1, routed)           0.487     2.385    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[7]
+    SLICE_X101Y41        CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     2.545 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.545    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.090     2.635 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/O[1]
+                         net (fo=1, routed)           0.000     2.635    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_6
+    SLICE_X101Y42        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.757     2.203    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y42        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[9]/C
+                         clock pessimism             -0.219     1.984    
+    SLICE_X101Y42        FDRE (Hold_fdre_C_D)         0.105     2.089    es_i/led_blinker_0/U0/clk_divider_reg[9]
+  -------------------------------------------------------------------
+                         required time                         -2.089    
+                         arrival time                           2.635    
+  -------------------------------------------------------------------
+                         slack                                  0.546    
+
+Slack (MET) :             0.547ns  (arrival time - required time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.881ns  (logic 0.394ns (44.742%)  route 0.487ns (55.258%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        0.229ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.205ns
+    Source Clock Delay      (SCD):    1.757ns
+    Clock Pessimism Removal (CPR):    0.219ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.499     1.757    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y41        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y41        FDRE (Prop_fdre_C_Q)         0.141     1.898 r  es_i/led_blinker_0/U0/clk_divider_reg[7]/Q
+                         net (fo=1, routed)           0.487     2.385    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[7]
+    SLICE_X101Y41        CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     2.545 r  es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.545    es_i/led_blinker_0/U0/clk_divider_reg[4]_i_1_n_0
+    SLICE_X101Y42        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.039     2.584 r  es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.584    es_i/led_blinker_0/U0/clk_divider_reg[8]_i_1_n_0
+    SLICE_X101Y43        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.054     2.638 r  es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1/O[0]
+                         net (fo=1, routed)           0.000     2.638    es_i/led_blinker_0/U0/clk_divider_reg[12]_i_1_n_7
+    SLICE_X101Y43        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.759     2.205    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y43        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[12]/C
+                         clock pessimism             -0.219     1.986    
+    SLICE_X101Y43        FDRE (Hold_fdre_C_D)         0.105     2.091    es_i/led_blinker_0/U0/clk_divider_reg[12]
+  -------------------------------------------------------------------
+                         required time                         -2.091    
+                         arrival time                           2.638    
+  -------------------------------------------------------------------
+                         slack                                  0.547    
+
+Slack (MET) :             0.551ns  (arrival time - required time)
+  Source:                 es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            es_i/led_blinker_0/U0/clk_divider_reg[23]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.656ns  (logic 0.249ns (37.929%)  route 0.407ns (62.071%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.144ns
+    Source Clock Delay      (SCD):    1.721ns
+    Clock Pessimism Removal (CPR):    0.423ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.463     1.721    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X101Y45        FDRE (Prop_fdre_C_Q)         0.141     1.862 r  es_i/led_blinker_0/U0/clk_divider_reg[23]/Q
+                         net (fo=1, routed)           0.407     2.269    es_i/led_blinker_0/U0/clk_divider_reg_n_0_[23]
+    SLICE_X101Y45        CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     2.377 r  es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1/O[3]
+                         net (fo=1, routed)           0.000     2.377    es_i/led_blinker_0/U0/clk_divider_reg[20]_i_1_n_4
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=28, routed)          1.698     2.144    es_i/led_blinker_0/U0/clk
+    SLICE_X101Y45        FDRE                                         r  es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+                         clock pessimism             -0.423     1.721    
+    SLICE_X101Y45        FDRE (Hold_fdre_C_D)         0.105     1.826    es_i/led_blinker_0/U0/clk_divider_reg[23]
+  -------------------------------------------------------------------
+                         required time                         -1.826    
+                         arrival time                           2.377    
+  -------------------------------------------------------------------
+                         slack                                  0.551    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X101Y40  es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X101Y42  es_i/led_blinker_0/U0/clk_divider_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X101Y42  es_i/led_blinker_0/U0/clk_divider_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[12]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[13]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[14]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[15]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X101Y44  es_i/led_blinker_0/U0/clk_divider_reg[16]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X101Y45  es_i/led_blinker_0/U0/clk_divider_reg[21]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X101Y45  es_i/led_blinker_0/U0/clk_divider_reg[22]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y46  es_i/led_blinker_0/U0/clk_divider_reg[24]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y46  es_i/led_blinker_0/U0/clk_divider_reg[25]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y46  es_i/led_blinker_0/U0/clk_divider_reg[26]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X100Y46  es_i/led_blinker_0/U0/reset_sync_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[12]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[12]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[13]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[13]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[14]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[14]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y40  es_i/led_blinker_0/U0/clk_divider_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y45  es_i/led_blinker_0/U0/clk_divider_reg[21]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y45  es_i/led_blinker_0/U0/clk_divider_reg[22]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y45  es_i/led_blinker_0/U0/clk_divider_reg[23]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y40  es_i/led_blinker_0/U0/clk_divider_reg[2]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y40  es_i/led_blinker_0/U0/clk_divider_reg[3]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y40  es_i/led_blinker_0/U0/clk_divider_reg[1]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y45  es_i/led_blinker_0/U0/clk_divider_reg[20]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[12]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X101Y43  es_i/led_blinker_0/U0/clk_divider_reg[13]/C
+
+
+
