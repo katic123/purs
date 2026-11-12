@@ -146,3 +146,27 @@ Troubleshooting hints:
 02:43:27 INFO  : Platform repository initialization has completed.
 02:43:27 INFO  : Registering command handlers for Vitis TCF services
 02:43:27 INFO  : Successfully done query RDI_DATADIR 
+10:50:22 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+10:50:24 INFO  : XSCT server has started successfully.
+10:50:24 INFO  : plnx-install-location is set to ''
+10:50:24 INFO  : Successfully done setting XSCT server connection channel  
+10:50:24 INFO  : Successfully done setting workspace for the tool. 
+10:50:25 INFO  : Platform repository initialization has completed.
+10:50:26 INFO  : Registering command handlers for Vitis TCF services
+10:50:26 INFO  : Successfully done query RDI_DATADIR 
+15:51:12 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+15:51:14 INFO  : XSCT server has started successfully.
+15:51:14 INFO  : Successfully done setting XSCT server connection channel  
+15:51:14 INFO  : plnx-install-location is set to ''
+15:51:14 INFO  : Successfully done setting workspace for the tool. 
+15:51:15 INFO  : Platform repository initialization has completed.
+15:51:15 INFO  : Registering command handlers for Vitis TCF services
+15:51:15 INFO  : Successfully done query RDI_DATADIR 
+19:31:42 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+19:31:44 INFO  : XSCT server has started successfully.
+19:31:44 INFO  : Successfully done setting XSCT server connection channel  
+19:31:44 INFO  : plnx-install-location is set to ''
+19:31:44 INFO  : Successfully done setting workspace for the tool. 
+19:31:45 INFO  : Platform repository initialization has completed.
+19:31:45 INFO  : Successfully done query RDI_DATADIR 
+19:31:46 INFO  : Registering command handlers for Vitis TCF services

@@ -68,3 +68,12 @@ timestamp=[2026-11-09 07:43:10], mode=BUILD, duration=0:00:06.182, duration_ms=6
 timestamp=[2026-11-11 02:43:26], mode=WORKBENCH_START, duration=0:00:07.535, duration_ms=7535, data={}
 timestamp=[2026-11-11 02:43:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.015, duration_ms=15, data={}
 timestamp=[2026-11-11 02:43:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.795, duration_ms=795, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sw1,sw1_system,zynq1}
+timestamp=[2026-11-11 10:50:25], mode=WORKBENCH_START, duration=0:00:07.461, duration_ms=7461, data={}
+timestamp=[2026-11-11 10:50:25], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.031, duration_ms=31, data={}
+timestamp=[2026-11-11 10:50:26], mode=WORKBENCH_UI_INIT, duration=0:00:01.092, duration_ms=1092, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sw1,sw1_system,zynq1}
+timestamp=[2026-11-12 15:51:14], mode=WORKBENCH_START, duration=0:00:07.290, duration_ms=7290, data={}
+timestamp=[2026-11-12 15:51:15], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.035, duration_ms=35, data={}
+timestamp=[2026-11-12 15:51:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.739, duration_ms=739, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sw1,sw1_system,zynq1}
+timestamp=[2026-11-12 19:31:45], mode=WORKBENCH_START, duration=0:00:07.083, duration_ms=7083, data={}
+timestamp=[2026-11-12 19:31:45], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.022, duration_ms=22, data={}
+timestamp=[2026-11-12 19:31:46], mode=WORKBENCH_UI_INIT, duration=0:00:00.838, duration_ms=838, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,sw1,sw1_system,zynq1}

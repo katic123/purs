@@ -1,0 +1,156 @@
+06:42:15 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+06:42:15 ERROR : (XSDB Server)which: no xlsclients in (/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/lin
+06:42:15 ERROR : (XSDB Server)ux_toolchain/lin64_le/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/arm/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin::/home/leon/Xilinx/Vivado/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin:/home/leon/Xilinx/Vitis_HLS/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/aietools/bin:/home/leon/Xilinx/Vivado/2020.2/bin:/home/leon/.espressif/eim_gui:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+06:42:15 INFO  : Registering command handlers for Vitis TCF services
+06:42:18 INFO  : Platform repository initialization has completed.
+06:45:15 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+06:45:15 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+06:45:15 ERROR : Failed to call init_repo
+Reason: xsct server communication channel is not established.
+06:45:15 ERROR : Exception raised in executing the command =Failed to call init_repo
+Reason: xsct server communication channel is not established. 
+06:45:15 ERROR : (XSDB Server)which: no xlsclients in (/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/arm/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin::/home/leon/Xilinx/Vivado/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin:/home/leon/Xilinx/Vitis_HLS/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/aietools/bin:/home/leon/Xilinx/Vivado/2020.2/bin:/home/leon/.espressif/eim_gui:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+06:48:15 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+06:48:15 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+06:48:15 ERROR : xsct server communication channel is not established.
+06:48:15 ERROR : (XSDB Server)which: no xlsclients in (/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/arm/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin::/home/leon/Xilinx/Vivado/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin:/home/leon/Xilinx/Vitis_HLS/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/aietools/bin:/home/leon/Xilinx/Vivado/2020.2/bin:/home/leon/.espressif/eim_gui:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+06:51:15 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+06:51:15 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+06:51:15 ERROR : (XSDB Server)which: no xlsclients in (/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/arm/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin::/home/leon/Xilinx/Vivado/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin:/home/leon/Xilinx/Vitis_HLS/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/aietools/bin:/home/leon/Xilinx/Vivado/2020.2/bin:/home/leon/.espressif/eim_gui:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+06:54:15 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+06:54:15 ERROR : Failed to query RDI_DATADIR
+Reason: xsct server communication channel is not established.
+06:54:15 ERROR : Exception raised in executing the command =Failed to query RDI_DATADIR
+Reason: xsct server communication channel is not established. 
+06:55:27 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+06:55:27 ERROR : (XSDB Server)which: no xlsclients in (/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/arm/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin::/home/leon/Xilinx/Vivado/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin:/home/leon/Xilinx/Vitis_HLS/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/aietools/bin:/home/leon/Xilinx/Vivado/2020.2/bin:/home/leon/.espressif/eim_gui:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+06:58:27 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+06:58:27 ERROR : Failed to openhw "/tmp/hwspec_zynq12662388595881927637/zynq1.xsa"
+Reason: xsct server communication channel is not established.
+06:59:08 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+06:59:08 ERROR : (XSDB Server)which: no xlsclients in (/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/arm/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin::/home/leon/Xilinx/Vivado/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin:/home/leon/Xilinx/Vitis_HLS/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/aietools/bin:/home/leon/Xilinx/Vivado/2020.2/bin:/home/leon/.espressif/eim_gui:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+07:02:08 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+07:02:08 ERROR : Failed to openhw "/tmp/hwspec_zynq19279764318643952612/zynq1.xsa"
+Reason: xsct server communication channel is not established.
+07:03:15 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+07:03:15 ERROR : (XSDB Server)which: no xlsclients in (/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/lin
+07:03:15 ERROR : (XSDB Server)ux_toolchain/lin64_le/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/arm/lin/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-none/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch64/lin/aarch64-linux/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/leon/Xilinx/Vitis/2020.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/cmake-3.3.2/bin::/home/leon/Xilinx/Vivado/2020.2/gnu/microblaze/lin/bin:/home/leon/Xilinx/Vitis/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin:/home/leon/Xilinx/Vitis_HLS/2020.2/bin:/home/leon/Xilinx/Vitis/2020.2/aietools/bin:/home/leon/Xilinx/Vivado/2020.2/bin:/home/leon/.local/bin:/home/leon/.espressif/eim_gui:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+07:03:15 INFO  : Registering command handlers for Vitis TCF services
+07:03:18 INFO  : Platform repository initialization has completed.
+07:03:50 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+07:03:50 INFO  : Registering command handlers for Vitis TCF services
+07:03:53 INFO  : Platform repository initialization has completed.
+07:06:50 ERROR : Timed out. 180 seconds have elapsed while waiting for XSCT server to launch.
+07:06:50 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+07:06:50 ERROR : Failed to call init_repo
+Reason: xsct server communication channel is not established.
+07:06:50 ERROR : Exception raised in executing the command =Failed to call init_repo
+Reason: xsct server communication channel is not established. 
+07:06:52 INFO  : XSCT server has started successfully.
+07:06:52 INFO  : Successfully done query RDI_DATADIR 
+07:06:52 INFO  : Successfully done setting XSCT server connection channel  
+07:06:52 INFO  : plnx-install-location is set to ''
+07:06:53 INFO  : Successfully done setting workspace for the tool. 
+07:07:22 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+07:07:23 INFO  : Registering command handlers for Vitis TCF services
+07:07:25 INFO  : Platform repository initialization has completed.
+07:07:25 INFO  : XSCT server has started successfully.
+07:07:25 INFO  : Successfully done setting XSCT server connection channel  
+07:07:26 INFO  : plnx-install-location is set to ''
+07:07:26 INFO  : Successfully done setting workspace for the tool. 
+07:07:26 INFO  : Successfully done query RDI_DATADIR 
+07:09:11 INFO  : Result from executing command 'getProjects': zynq1
+07:09:11 INFO  : Result from executing command 'getPlatforms': 
+07:10:04 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+07:10:06 INFO  : Registering command handlers for Vitis TCF services
+07:10:08 INFO  : XSCT server has started successfully.
+07:10:08 INFO  : Successfully done setting XSCT server connection channel  
+07:10:08 INFO  : Successfully done setting workspace for the tool. 
+07:10:08 INFO  : plnx-install-location is set to ''
+07:10:08 INFO  : Successfully done query RDI_DATADIR 
+07:10:09 INFO  : Platform repository initialization has completed.
+07:27:00 INFO  : Result from executing command 'getProjects': zynq1
+07:27:00 INFO  : Result from executing command 'getPlatforms': zynq1|/home/leon/Desktop/katic_leon/v4/zynq1/export/zynq1/zynq1.xpfm
+07:27:03 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:28:14 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:30:20 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:31:00 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:31:17 INFO  : Result from executing command 'getProjects': zynq1
+07:31:17 INFO  : Result from executing command 'getPlatforms': zynq1|/home/leon/Desktop/katic_leon/v4/zynq1/export/zynq1/zynq1.xpfm
+07:31:20 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:31:59 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:33:17 INFO  : Result from executing command 'getProjects': zynq1
+07:33:17 INFO  : Result from executing command 'getPlatforms': zynq1|/home/leon/Desktop/katic_leon/v4/zynq1/export/zynq1/zynq1.xpfm
+07:33:46 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:34:22 INFO  : Result from executing command 'getProjects': zynq1
+07:34:22 INFO  : Result from executing command 'getPlatforms': zynq1|/home/leon/Desktop/katic_leon/v4/zynq1/export/zynq1/zynq1.xpfm
+07:34:25 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:35:26 INFO  : Result from executing command 'getProjects': zynq1
+07:35:26 INFO  : Result from executing command 'getPlatforms': zynq1|/home/leon/Desktop/katic_leon/v4/zynq1/export/zynq1/zynq1.xpfm
+07:35:29 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:36:20 INFO  : Result from executing command 'getProjects': zynq1
+07:36:20 INFO  : Result from executing command 'getPlatforms': zynq1|/home/leon/Desktop/katic_leon/v4/zynq1/export/zynq1/zynq1.xpfm
+07:39:40 INFO  : Result from executing command 'getProjects': zynq1
+07:39:40 INFO  : Result from executing command 'getPlatforms': zynq1|/home/leon/Desktop/katic_leon/v4/zynq1/export/zynq1/zynq1.xpfm
+07:39:43 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:41:09 INFO  : Result from executing command 'getProjects': zynq1
+07:41:09 INFO  : Result from executing command 'getPlatforms': zynq1|/home/leon/Desktop/katic_leon/v4/zynq1/export/zynq1/zynq1.xpfm
+07:41:12 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:42:59 INFO  : Result from executing command 'getProjects': zynq1
+07:42:59 INFO  : Result from executing command 'getPlatforms': zynq1|/home/leon/Desktop/katic_leon/v4/zynq1/export/zynq1/zynq1.xpfm
+07:43:02 INFO  : Checking for BSP changes to sync application flags for project 'sw1'...
+07:47:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:47:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+07:47:54 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+07:48:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:48:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+07:48:30 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+02:43:24 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+02:43:26 INFO  : XSCT server has started successfully.
+02:43:26 INFO  : plnx-install-location is set to ''
+02:43:26 INFO  : Successfully done setting XSCT server connection channel  
+02:43:26 INFO  : Successfully done setting workspace for the tool. 
+02:43:27 INFO  : Platform repository initialization has completed.
+02:43:27 INFO  : Registering command handlers for Vitis TCF services
+02:43:27 INFO  : Successfully done query RDI_DATADIR 
+10:50:22 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v4/temp_xsdb_launch_script.tcl
+10:50:24 INFO  : XSCT server has started successfully.
+10:50:24 INFO  : plnx-install-location is set to ''
+10:50:24 INFO  : Successfully done setting XSCT server connection channel  
+10:50:24 INFO  : Successfully done setting workspace for the tool. 
+10:50:25 INFO  : Platform repository initialization has completed.
+10:50:26 INFO  : Registering command handlers for Vitis TCF services
+10:50:26 INFO  : Successfully done query RDI_DATADIR 

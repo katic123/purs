@@ -5552,3 +5552,407 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 02:43:27.529
 !MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /home/leon/Xilinx/Vitis/2020.2/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY org.eclipse.ui.ide 4 4 2026-11-11 02:48:26.258
+!MESSAGE Transfer aborted, too many resources: 1734964256.
+If you are running in x11vnc environment please consider to switch to vncserver + vncviewer or to run x11vnc without clipboard support (use '-noclipboard' and '-nosetclipboard' arguments).
+
+!ENTRY org.eclipse.ui.ide 4 4 2026-11-11 02:48:26.258
+!MESSAGE Transfer aborted, too many resources: 1734964256.
+If you are running in x11vnc environment please consider to switch to vncserver + vncviewer or to run x11vnc without clipboard support (use '-noclipboard' and '-nosetclipboard' arguments).
+!STACK 0
+java.lang.IllegalArgumentException: Maximum limit of resources to transfer is: 1000000
+	at org.eclipse.ui.part.ResourceTransfer.nativeToJava(ResourceTransfer.java:180)
+	at org.eclipse.swt.dnd.Clipboard.getContents(Clipboard.java:323)
+	at org.eclipse.swt.dnd.Clipboard.getContents(Clipboard.java:243)
+	at org.eclipse.cdt.internal.ui.cview.PasteAction$1.run(PasteAction.java:175)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5797)
+	at org.eclipse.cdt.internal.ui.cview.PasteAction.updateSelection(PasteAction.java:170)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.selectionChanged(BaseSelectionListenerAction.java:128)
+	at org.eclipse.cdt.internal.ui.navigator.CNavigatorEditActionGroup.updateActionBars(CNavigatorEditActionGroup.java:134)
+	at org.eclipse.cdt.internal.ui.navigator.CNavigatorEditActionGroup.fillActionBars(CNavigatorEditActionGroup.java:99)
+	at org.eclipse.cdt.internal.ui.navigator.CNavigatorEditActionProvider.fillActionBars(CNavigatorEditActionProvider.java:73)
+	at org.eclipse.ui.navigator.NavigatorActionService$3.run(NavigatorActionService.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.navigator.NavigatorActionService.fillActionBars(NavigatorActionService.java:261)
+	at org.eclipse.ui.navigator.CommonNavigatorManager.selectionChanged(CommonNavigatorManager.java:220)
+	at org.eclipse.jface.viewers.Viewer$1.run(Viewer.java:151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:148)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2129)
+	at org.eclipse.jface.viewers.StructuredViewer.setSelection(StructuredViewer.java:1659)
+	at org.eclipse.jface.viewers.TreeViewer.setSelection(TreeViewer.java:1084)
+	at org.eclipse.ui.navigator.CommonViewer.setSelection(CommonViewer.java:371)
+	at org.eclipse.ui.navigator.CommonNavigator.selectReveal(CommonNavigator.java:390)
+	at org.eclipse.ui.internal.navigator.actions.LinkEditorAction$2$1.run(LinkEditorAction.java:104)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.navigator.actions.LinkEditorAction$2.runInUIThread(LinkEditorAction.java:93)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.ui.ide 4 4 2026-11-11 02:48:26.260
+!MESSAGE Transfer aborted, too many resources: 1734964256.
+If you are running in x11vnc environment please consider to switch to vncserver + vncviewer or to run x11vnc without clipboard support (use '-noclipboard' and '-nosetclipboard' arguments).
+
+!ENTRY org.eclipse.ui.ide 4 4 2026-11-11 02:48:26.260
+!MESSAGE Transfer aborted, too many resources: 1734964256.
+If you are running in x11vnc environment please consider to switch to vncserver + vncviewer or to run x11vnc without clipboard support (use '-noclipboard' and '-nosetclipboard' arguments).
+!STACK 0
+java.lang.IllegalArgumentException: Maximum limit of resources to transfer is: 1000000
+	at org.eclipse.ui.part.ResourceTransfer.nativeToJava(ResourceTransfer.java:180)
+	at org.eclipse.swt.dnd.Clipboard.getContents(Clipboard.java:323)
+	at org.eclipse.swt.dnd.Clipboard.getContents(Clipboard.java:243)
+	at org.eclipse.cdt.internal.ui.cview.PasteAction$1.run(PasteAction.java:175)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5797)
+	at org.eclipse.cdt.internal.ui.cview.PasteAction.updateSelection(PasteAction.java:170)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.selectionChanged(BaseSelectionListenerAction.java:128)
+	at org.eclipse.cdt.internal.ui.navigator.CNavigatorEditActionGroup.updateActionBars(CNavigatorEditActionGroup.java:134)
+	at org.eclipse.cdt.internal.ui.navigator.CNavigatorEditActionProvider.updateActionBars(CNavigatorEditActionProvider.java:112)
+	at org.eclipse.ui.navigator.NavigatorActionService$3.run(NavigatorActionService.java:269)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.navigator.NavigatorActionService.fillActionBars(NavigatorActionService.java:261)
+	at org.eclipse.ui.navigator.CommonNavigatorManager.selectionChanged(CommonNavigatorManager.java:220)
+	at org.eclipse.jface.viewers.Viewer$1.run(Viewer.java:151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:148)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2129)
+	at org.eclipse.jface.viewers.StructuredViewer.setSelection(StructuredViewer.java:1659)
+	at org.eclipse.jface.viewers.TreeViewer.setSelection(TreeViewer.java:1084)
+	at org.eclipse.ui.navigator.CommonViewer.setSelection(CommonViewer.java:371)
+	at org.eclipse.ui.navigator.CommonNavigator.selectReveal(CommonNavigator.java:390)
+	at org.eclipse.ui.internal.navigator.actions.LinkEditorAction$2$1.run(LinkEditorAction.java:104)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.navigator.actions.LinkEditorAction$2.runInUIThread(LinkEditorAction.java:93)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.ui.ide 4 4 2026-11-11 02:48:26.261
+!MESSAGE Transfer aborted, too many resources: 1734964256.
+If you are running in x11vnc environment please consider to switch to vncserver + vncviewer or to run x11vnc without clipboard support (use '-noclipboard' and '-nosetclipboard' arguments).
+
+!ENTRY org.eclipse.ui.ide 4 4 2026-11-11 02:48:26.261
+!MESSAGE Transfer aborted, too many resources: 1734964256.
+If you are running in x11vnc environment please consider to switch to vncserver + vncviewer or to run x11vnc without clipboard support (use '-noclipboard' and '-nosetclipboard' arguments).
+!STACK 0
+java.lang.IllegalArgumentException: Maximum limit of resources to transfer is: 1000000
+	at org.eclipse.ui.part.ResourceTransfer.nativeToJava(ResourceTransfer.java:180)
+	at org.eclipse.swt.dnd.Clipboard.getContents(Clipboard.java:323)
+	at org.eclipse.swt.dnd.Clipboard.getContents(Clipboard.java:243)
+	at com.xilinx.ide.application.ui.CustomPasteAction.lambda$0(CustomPasteAction.java:180)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5797)
+	at com.xilinx.ide.application.ui.CustomPasteAction.updateSelection(CustomPasteAction.java:176)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.selectionChanged(BaseSelectionListenerAction.java:128)
+	at com.xilinx.ide.application.ui.navigator.ResourceManagementActionProvider.updateActionBars(ResourceManagementActionProvider.java:142)
+	at com.xilinx.ide.application.ui.navigator.ResourceManagementActionProvider.fillActionBars(ResourceManagementActionProvider.java:134)
+	at org.eclipse.ui.navigator.NavigatorActionService$3.run(NavigatorActionService.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.navigator.NavigatorActionService.fillActionBars(NavigatorActionService.java:261)
+	at org.eclipse.ui.navigator.CommonNavigatorManager.selectionChanged(CommonNavigatorManager.java:220)
+	at org.eclipse.jface.viewers.Viewer$1.run(Viewer.java:151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:148)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2129)
+	at org.eclipse.jface.viewers.StructuredViewer.setSelection(StructuredViewer.java:1659)
+	at org.eclipse.jface.viewers.TreeViewer.setSelection(TreeViewer.java:1084)
+	at org.eclipse.ui.navigator.CommonViewer.setSelection(CommonViewer.java:371)
+	at org.eclipse.ui.navigator.CommonNavigator.selectReveal(CommonNavigator.java:390)
+	at org.eclipse.ui.internal.navigator.actions.LinkEditorAction$2$1.run(LinkEditorAction.java:104)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.navigator.actions.LinkEditorAction$2.runInUIThread(LinkEditorAction.java:93)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.ui.ide 4 4 2026-11-11 02:48:26.262
+!MESSAGE Transfer aborted, too many resources: 1734964256.
+If you are running in x11vnc environment please consider to switch to vncserver + vncviewer or to run x11vnc without clipboard support (use '-noclipboard' and '-nosetclipboard' arguments).
+
+!ENTRY org.eclipse.ui.ide 4 4 2026-11-11 02:48:26.262
+!MESSAGE Transfer aborted, too many resources: 1734964256.
+If you are running in x11vnc environment please consider to switch to vncserver + vncviewer or to run x11vnc without clipboard support (use '-noclipboard' and '-nosetclipboard' arguments).
+!STACK 0
+java.lang.IllegalArgumentException: Maximum limit of resources to transfer is: 1000000
+	at org.eclipse.ui.part.ResourceTransfer.nativeToJava(ResourceTransfer.java:180)
+	at org.eclipse.swt.dnd.Clipboard.getContents(Clipboard.java:323)
+	at org.eclipse.swt.dnd.Clipboard.getContents(Clipboard.java:243)
+	at com.xilinx.ide.application.ui.CustomPasteAction.lambda$0(CustomPasteAction.java:180)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5797)
+	at com.xilinx.ide.application.ui.CustomPasteAction.updateSelection(CustomPasteAction.java:176)
+	at org.eclipse.ui.actions.BaseSelectionListenerAction.selectionChanged(BaseSelectionListenerAction.java:128)
+	at com.xilinx.ide.application.ui.navigator.ResourceManagementActionProvider.updateActionBars(ResourceManagementActionProvider.java:142)
+	at org.eclipse.ui.navigator.NavigatorActionService$3.run(NavigatorActionService.java:269)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.navigator.NavigatorActionService.fillActionBars(NavigatorActionService.java:261)
+	at org.eclipse.ui.navigator.CommonNavigatorManager.selectionChanged(CommonNavigatorManager.java:220)
+	at org.eclipse.jface.viewers.Viewer$1.run(Viewer.java:151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:148)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2129)
+	at org.eclipse.jface.viewers.StructuredViewer.setSelection(StructuredViewer.java:1659)
+	at org.eclipse.jface.viewers.TreeViewer.setSelection(TreeViewer.java:1084)
+	at org.eclipse.ui.navigator.CommonViewer.setSelection(CommonViewer.java:371)
+	at org.eclipse.ui.navigator.CommonNavigator.selectReveal(CommonNavigator.java:390)
+	at org.eclipse.ui.internal.navigator.actions.LinkEditorAction$2$1.run(LinkEditorAction.java:104)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.navigator.actions.LinkEditorAction$2.runInUIThread(LinkEditorAction.java:93)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+!SESSION 2026-11-11 10:50:16.900 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-11-11 10:50:20.241
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-11-11 10:50:20.242
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-11-11 10:50:20.242
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.ui 4 4 2026-11-11 10:50:20.343
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 10:50:24.451
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 10:50:24.451
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 10:50:24.454
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 10:50:24.454
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 10:50:24.455
+!MESSAGE XSCT Command: [setws /home/leon/Desktop/katic_leon/v4], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 10:50:24.456
+!MESSAGE XSCT command with result: [setws /home/leon/Desktop/katic_leon/v4], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 10:50:25.603
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 10:50:26.231
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 10:50:26.235
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-11 10:50:26.245
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /home/leon/Xilinx/Vitis/2020.2/data]. Thread: Worker-4: Initializing s/w repositories
+!SESSION 2026-11-12 15:51:06.548 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-11-12 15:51:09.894
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-11-12 15:51:09.895
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-11-12 15:51:09.895
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.ui 4 4 2026-11-12 15:51:09.989
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 15:51:14.034
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 15:51:14.034
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 15:51:14.036
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 15:51:14.036
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 15:51:14.037
+!MESSAGE XSCT Command: [setws /home/leon/Desktop/katic_leon/v4], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 15:51:14.038
+!MESSAGE XSCT command with result: [setws /home/leon/Desktop/katic_leon/v4], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 15:51:15.048
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 15:51:15.547
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 15:51:15.548
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 15:51:15.548
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /home/leon/Xilinx/Vitis/2020.2/data]. Thread: Worker-2: Initializing s/w repositories
+!SESSION 2026-11-12 19:31:37.421 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-11-12 19:31:40.710
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-11-12 19:31:40.711
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-11-12 19:31:40.711
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.ui 4 4 2026-11-12 19:31:40.816
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 19:31:44.777
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 19:31:44.777
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 19:31:44.780
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 19:31:44.781
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 19:31:44.781
+!MESSAGE XSCT Command: [setws /home/leon/Desktop/katic_leon/v4], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 19:31:44.782
+!MESSAGE XSCT command with result: [setws /home/leon/Desktop/katic_leon/v4], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 19:31:45.609
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 19:31:45.695
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 19:31:45.695
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-11-12 19:31:45.709
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /home/leon/Xilinx/Vitis/2020.2/data]. Thread: Worker-3: Initializing s/w repositories
