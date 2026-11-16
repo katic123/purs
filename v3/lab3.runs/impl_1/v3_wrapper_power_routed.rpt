@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Sun Nov  8 23:55:09 2026
+| Date             : Fri Nov 13 12:34:53 2026
 | Host             : arch-t14s running 64-bit unknown
 | Command          : report_power -file v3_wrapper_power_routed.rpt -pb v3_wrapper_power_summary_routed.pb -rpx v3_wrapper_power_routed.rpx
 | Design           : v3_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.109        |
+| Total On-Chip Power (W)  | 0.108        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.003        |
@@ -52,7 +52,7 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
+| Clocks         |    <0.001 |        3 |       --- |             --- |
 | Slice Logic    |    <0.001 |       79 |       --- |             --- |
 |   CARRY4       |    <0.001 |       15 |     13300 |            0.11 |
 |   Register     |    <0.001 |       58 |    106400 |            0.05 |
@@ -61,7 +61,7 @@ Table of Contents
 | Signals        |    <0.001 |       72 |       --- |             --- |
 | I/O            |     0.002 |        4 |       200 |            2.00 |
 | Static Power   |     0.106 |          |           |                 |
-| Total          |     0.109 |          |           |                 |
+| Total          |     0.108 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.009 |       0.001 |      0.007 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.008 |       0.001 |      0.007 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -148,7 +148,6 @@ Table of Contents
 | Name       | Power (W) |
 +------------+-----------+
 | v3_wrapper |     0.003 |
-|   v3_i     |     0.001 |
 +------------+-----------+
 
 

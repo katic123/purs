@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="sw2" location="/home/leon/Desktop/katic_leon/v4/sw2" platform="/home/leon/Desktop/katic_leon/v4/znyq2/export/znyq2/znyq2.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="sw2_system" sysConfig="znyq2" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="2cd3e4b5eae06fbf75a7a6e803107fb6">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.20549277">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1576768822" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

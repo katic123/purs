@@ -1,0 +1,38 @@
+
+Nov 15, 2026 18:51:07.92 NEW SESSION
+Nov 15, 2026 18:51:07.92 Error: Failed to open Wayland display, fallback to X11. WAYLAND_DISPLAY='wayland-1' DISPLAY=':0'
+Nov 15, 2026 18:51:13.41 /home/leon/.config/mozilla/firefox/oB2dRJXx.Profile 1/prefs.js:16: prefs parse error: unknown keyword
+Nov 15, 2026 18:51:13.41 /home/leon/.config/mozilla/firefox/oB2dRJXx.Profile 1/prefs.js:17: prefs parse error: unknown keyword
+Nov 15, 2026 18:51:13.41 /home/leon/.config/mozilla/firefox/oB2dRJXx.Profile 1/prefs.js:18: prefs parse error: unknown keyword
+Nov 15, 2026 18:51:19.99 Error: Failed to open Wayland display, fallback to X11. WAYLAND_DISPLAY='wayland-1' DISPLAY=':0'
+Nov 15, 2026 18:51:29.70 Error: Failed to open Wayland display, fallback to X11. WAYLAND_DISPLAY='wayland-1' DISPLAY=':0'
+Nov 15, 2026 18:51:34.13 Error: Failed to open Wayland display, fallback to X11. WAYLAND_DISPLAY='wayland-1' DISPLAY=':0'
+Nov 15, 2026 18:51:36.73 /home/leon/.config/mozilla/firefox/bBbJEB1s.Profile 2/prefs.js:16: prefs parse error: unknown keyword
+Nov 15, 2026 18:51:36.73 /home/leon/.config/mozilla/firefox/bBbJEB1s.Profile 2/prefs.js:17: prefs parse error: unknown keyword
+Nov 15, 2026 18:51:36.73 /home/leon/.config/mozilla/firefox/bBbJEB1s.Profile 2/prefs.js:18: prefs parse error: unknown keyword
+Nov 15, 2026 18:52:28.24 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:28.83 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:36.43 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:36.73 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:36.97 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:37.13 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:37.27 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:37.43 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:37.57 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:37.72 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:37.86 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:37.99 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:52:38.14 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:05.43 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:05.87 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:06.30 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:06.61 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:06.84 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:07.00 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:07.14 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:07.30 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:08.15 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:08.31 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:08.42 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:09.12 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)
+Nov 15, 2026 18:53:09.31 /usr/lib/chromium/chromium: /home/leon/Xilinx/Vitis/2020.2/lib/lnx64.o/Default/libgcc_s.so.1: version `GCC_12.0.0' not found (required by /usr/lib/libhwy.so.1)

@@ -3,7 +3,6 @@
 	<name>sw1</name>
 	<comment>Created by Vitis v2020.2</comment>
 	<projects>
-		<project>zynq1</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

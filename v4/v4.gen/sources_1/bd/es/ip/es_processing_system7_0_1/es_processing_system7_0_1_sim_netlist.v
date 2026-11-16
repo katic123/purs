@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Mon Nov  9 06:12:47 2026
+// Date        : Mon Nov 16 20:24:16 2026
 // Host        : arch-t14s running 64-bit unknown
 // Command     : write_verilog -force -mode funcsim
 //               /home/leon/Desktop/katic_leon/v4/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/es_processing_system7_0_1_sim_netlist.v
@@ -424,7 +424,7 @@ module es_processing_system7_0_1
   (* C_USE_S_AXI_HP2 = "0" *) 
   (* C_USE_S_AXI_HP3 = "0" *) 
   (* HW_HANDOFF = "es_processing_system7_0_1.hwdef" *) 
-  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={} dataWidth={} clockFreq={533.333} readRate={0.5} writeRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} />/>" *) 
+  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={} dataWidth={} clockFreq={533.333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS33} bidis={38} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={16} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} />/>" *) 
   (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
   es_processing_system7_0_1_processing_system7_v5_5_processing_system7 inst
        (.CAN0_PHY_RX(1'b0),
@@ -1133,7 +1133,7 @@ endmodule
 (* C_USE_S_AXI_ACP = "0" *) (* C_USE_S_AXI_GP0 = "0" *) (* C_USE_S_AXI_GP1 = "0" *) 
 (* C_USE_S_AXI_HP0 = "0" *) (* C_USE_S_AXI_HP1 = "0" *) (* C_USE_S_AXI_HP2 = "0" *) 
 (* C_USE_S_AXI_HP3 = "0" *) (* HW_HANDOFF = "es_processing_system7_0_1.hwdef" *) (* ORIG_REF_NAME = "processing_system7_v5_5_processing_system7" *) 
-(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={} dataWidth={} clockFreq={533.333} readRate={0.5} writeRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
+(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={} dataWidth={} clockFreq={533.333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS33} bidis={38} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={16} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1600.000} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
 module es_processing_system7_0_1_processing_system7_v5_5_processing_system7
    (CAN0_PHY_TX,
     CAN0_PHY_RX,

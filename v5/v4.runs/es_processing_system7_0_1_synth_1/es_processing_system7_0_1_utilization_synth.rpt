@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Wed Nov 11 12:33:36 2026
+| Date         : Mon Nov 16 18:52:59 2026
 | Host         : arch-t14s running 64-bit unknown
 | Command      : report_utilization -file es_processing_system7_0_1_utilization_synth.rpt -pb es_processing_system7_0_1_utilization_synth.pb
 | Design       : es_processing_system7_0_1
@@ -87,24 +87,24 @@ Table of Contents
 4. IO and GT Specific
 ---------------------
 
-+-----------------------------+------+-------+-----------+-------+
-|          Site Type          | Used | Fixed | Available | Util% |
-+-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    0 |     0 |       200 |  0.00 |
-| Bonded IPADs                |    0 |     0 |         2 |  0.00 |
-| Bonded IOPADs               |   57 |     0 |       130 | 43.85 |
-| PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
-| PHASER_REF                  |    0 |     0 |         4 |  0.00 |
-| OUT_FIFO                    |    0 |     0 |        16 |  0.00 |
-| IN_FIFO                     |    0 |     0 |        16 |  0.00 |
-| IDELAYCTRL                  |    0 |     0 |         4 |  0.00 |
-| IBUFDS                      |    0 |     0 |       192 |  0.00 |
-| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        16 |  0.00 |
-| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        16 |  0.00 |
-| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       200 |  0.00 |
-| ILOGIC                      |    0 |     0 |       200 |  0.00 |
-| OLOGIC                      |    0 |     0 |       200 |  0.00 |
-+-----------------------------+------+-------+-----------+-------+
++-----------------------------+------+-------+-----------+--------+
+|          Site Type          | Used | Fixed | Available |  Util% |
++-----------------------------+------+-------+-----------+--------+
+| Bonded IOB                  |    0 |     0 |       200 |   0.00 |
+| Bonded IPADs                |    0 |     0 |         2 |   0.00 |
+| Bonded IOPADs               |  130 |     0 |       130 | 100.00 |
+| PHY_CONTROL                 |    0 |     0 |         4 |   0.00 |
+| PHASER_REF                  |    0 |     0 |         4 |   0.00 |
+| OUT_FIFO                    |    0 |     0 |        16 |   0.00 |
+| IN_FIFO                     |    0 |     0 |        16 |   0.00 |
+| IDELAYCTRL                  |    0 |     0 |         4 |   0.00 |
+| IBUFDS                      |    0 |     0 |       192 |   0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        16 |   0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        16 |   0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       200 |   0.00 |
+| ILOGIC                      |    0 |     0 |       200 |   0.00 |
+| OLOGIC                      |    0 |     0 |       200 |   0.00 |
++-----------------------------+------+-------+-----------+--------+
 
 
 5. Clocking

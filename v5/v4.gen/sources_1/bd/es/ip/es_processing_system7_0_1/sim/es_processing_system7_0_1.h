@@ -81,6 +81,23 @@ public:
   // module pin-to-pin RTL interface
 
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
+  sc_core::sc_out< bool > DDR_CAS_n;
+  sc_core::sc_out< bool > DDR_CKE;
+  sc_core::sc_out< bool > DDR_Clk_n;
+  sc_core::sc_out< bool > DDR_Clk;
+  sc_core::sc_out< bool > DDR_CS_n;
+  sc_core::sc_out< bool > DDR_DRSTB;
+  sc_core::sc_out< bool > DDR_ODT;
+  sc_core::sc_out< bool > DDR_RAS_n;
+  sc_core::sc_out< bool > DDR_WEB;
+  sc_core::sc_out< sc_dt::sc_bv<3> > DDR_BankAddr;
+  sc_core::sc_out< sc_dt::sc_bv<15> > DDR_Addr;
+  sc_core::sc_out< bool > DDR_VRN;
+  sc_core::sc_out< bool > DDR_VRP;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DM;
+  sc_core::sc_out< sc_dt::sc_bv<32> > DDR_DQ;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS_n;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS;
   sc_core::sc_out< bool > PS_SRSTB;
   sc_core::sc_out< bool > PS_CLK;
   sc_core::sc_out< bool > PS_PORB;
@@ -112,6 +129,23 @@ public:
   // module pin-to-pin RTL interface
 
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
+  sc_core::sc_out< bool > DDR_CAS_n;
+  sc_core::sc_out< bool > DDR_CKE;
+  sc_core::sc_out< bool > DDR_Clk_n;
+  sc_core::sc_out< bool > DDR_Clk;
+  sc_core::sc_out< bool > DDR_CS_n;
+  sc_core::sc_out< bool > DDR_DRSTB;
+  sc_core::sc_out< bool > DDR_ODT;
+  sc_core::sc_out< bool > DDR_RAS_n;
+  sc_core::sc_out< bool > DDR_WEB;
+  sc_core::sc_out< sc_dt::sc_bv<3> > DDR_BankAddr;
+  sc_core::sc_out< sc_dt::sc_bv<15> > DDR_Addr;
+  sc_core::sc_out< bool > DDR_VRN;
+  sc_core::sc_out< bool > DDR_VRP;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DM;
+  sc_core::sc_out< sc_dt::sc_bv<32> > DDR_DQ;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS_n;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS;
   sc_core::sc_out< bool > PS_SRSTB;
   sc_core::sc_out< bool > PS_CLK;
   sc_core::sc_out< bool > PS_PORB;
@@ -143,6 +177,23 @@ public:
   // module pin-to-pin RTL interface
 
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
+  sc_core::sc_out< bool > DDR_CAS_n;
+  sc_core::sc_out< bool > DDR_CKE;
+  sc_core::sc_out< bool > DDR_Clk_n;
+  sc_core::sc_out< bool > DDR_Clk;
+  sc_core::sc_out< bool > DDR_CS_n;
+  sc_core::sc_out< bool > DDR_DRSTB;
+  sc_core::sc_out< bool > DDR_ODT;
+  sc_core::sc_out< bool > DDR_RAS_n;
+  sc_core::sc_out< bool > DDR_WEB;
+  sc_core::sc_out< sc_dt::sc_bv<3> > DDR_BankAddr;
+  sc_core::sc_out< sc_dt::sc_bv<15> > DDR_Addr;
+  sc_core::sc_out< bool > DDR_VRN;
+  sc_core::sc_out< bool > DDR_VRP;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DM;
+  sc_core::sc_out< sc_dt::sc_bv<32> > DDR_DQ;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS_n;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS;
   sc_core::sc_out< bool > PS_SRSTB;
   sc_core::sc_out< bool > PS_CLK;
   sc_core::sc_out< bool > PS_PORB;
@@ -174,6 +225,23 @@ public:
   // module pin-to-pin RTL interface
 
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
+  sc_core::sc_out< bool > DDR_CAS_n;
+  sc_core::sc_out< bool > DDR_CKE;
+  sc_core::sc_out< bool > DDR_Clk_n;
+  sc_core::sc_out< bool > DDR_Clk;
+  sc_core::sc_out< bool > DDR_CS_n;
+  sc_core::sc_out< bool > DDR_DRSTB;
+  sc_core::sc_out< bool > DDR_ODT;
+  sc_core::sc_out< bool > DDR_RAS_n;
+  sc_core::sc_out< bool > DDR_WEB;
+  sc_core::sc_out< sc_dt::sc_bv<3> > DDR_BankAddr;
+  sc_core::sc_out< sc_dt::sc_bv<15> > DDR_Addr;
+  sc_core::sc_out< bool > DDR_VRN;
+  sc_core::sc_out< bool > DDR_VRP;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DM;
+  sc_core::sc_out< sc_dt::sc_bv<32> > DDR_DQ;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS_n;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS;
   sc_core::sc_out< bool > PS_SRSTB;
   sc_core::sc_out< bool > PS_CLK;
   sc_core::sc_out< bool > PS_PORB;
@@ -209,6 +277,23 @@ public:
   // module pin-to-pin RTL interface
 
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
+  sc_core::sc_out< bool > DDR_CAS_n;
+  sc_core::sc_out< bool > DDR_CKE;
+  sc_core::sc_out< bool > DDR_Clk_n;
+  sc_core::sc_out< bool > DDR_Clk;
+  sc_core::sc_out< bool > DDR_CS_n;
+  sc_core::sc_out< bool > DDR_DRSTB;
+  sc_core::sc_out< bool > DDR_ODT;
+  sc_core::sc_out< bool > DDR_RAS_n;
+  sc_core::sc_out< bool > DDR_WEB;
+  sc_core::sc_out< sc_dt::sc_bv<3> > DDR_BankAddr;
+  sc_core::sc_out< sc_dt::sc_bv<15> > DDR_Addr;
+  sc_core::sc_out< bool > DDR_VRN;
+  sc_core::sc_out< bool > DDR_VRP;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DM;
+  sc_core::sc_out< sc_dt::sc_bv<32> > DDR_DQ;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS_n;
+  sc_core::sc_out< sc_dt::sc_bv<4> > DDR_DQS;
   sc_core::sc_out< bool > PS_SRSTB;
   sc_core::sc_out< bool > PS_CLK;
   sc_core::sc_out< bool > PS_PORB;

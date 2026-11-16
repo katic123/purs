@@ -14,9 +14,9 @@ preplace inst led_blinker_0 -pg 1 -lvl 1 -x 160 -y 250 -defaultsOSRD
 preplace netloc clk_0_1 1 0 1 20J 230n
 preplace netloc reset_0_1 1 0 1 NJ 260
 preplace netloc led_blinker_0_square 1 1 1 NJ 250
-preplace netloc processing_system7_0_FIXED_IO 1 1 1 NJ 60
+preplace netloc processing_system7_0_FIXED_IO 1 1 1 300J 60n
 levelinfo -pg 1 0 160 320
 pagesize -pg 1 -db -bbox -sgen -90 0 450 320
 "
 }
-
+0

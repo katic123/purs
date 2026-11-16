@@ -1,0 +1,56 @@
+2026-11-13T13:18:04.625779153193241-13:18:04 **** Clean-only build of project zynq1 ****
+255255255-buildplatform.sh 40111 zynq1 clean 
+255255255-XSDB Server Channel: tcfchan#9
+255255255-Cleaning the zynq_fsbl application.
+255255255-rm -rf  fsbl_hooks.o  image_mover.o  main.o  md5.o  nand.o  nor.o  pcap.o  ps7_init.o  qspi.o  rsa.o  sd.o  fsbl_handoff.o zynq
+255255255-_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
+255255255-
+255255255-Cleaning the zynq_fsbl application, bsp
+255255255-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/xilffs_v4_4/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s clean 
+255255255-
+255255255-rm -f ps7_cortexa9_0/lib/libxil.a
+255255255-
+255255255-Cleaning the BSP for domain  - standalone_domain
+255255255-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_10/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/dmaps_v2_7/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/scugic_v4_3/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/scutimer_v2_3/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_3/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/standalone_v7_3/src -s clean 
+255255255-
+255255255-make -C ps7_cortexa9_0/libsrc/xadcps_v2_5/src -s clean 
+255255255-
+255255255-rm -f ps7_cortexa9_0/lib/libxil.a
+255255255-
+153193241-
+13:18:09 Build Finished (took 4s.971ms)
+

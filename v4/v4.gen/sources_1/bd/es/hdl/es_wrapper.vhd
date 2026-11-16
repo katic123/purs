@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
---Date        : Mon Nov  9 06:12:12 2026
+--Date        : Mon Nov 16 20:23:34 2026
 --Host        : arch-t14s running 64-bit unknown
 --Command     : generate_target es_wrapper.bd
 --Design      : es_wrapper
@@ -26,13 +26,13 @@ end es_wrapper;
 architecture STRUCTURE of es_wrapper is
   component es is
   port (
+    clk : in STD_LOGIC;
+    reset : in STD_LOGIC;
+    LD0 : out STD_LOGIC;
     FIXED_IO_0_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_0_ps_srstb : inout STD_LOGIC;
     FIXED_IO_0_ps_clk : inout STD_LOGIC;
-    FIXED_IO_0_ps_porb : inout STD_LOGIC;
-    clk : in STD_LOGIC;
-    reset : in STD_LOGIC;
-    LD0 : out STD_LOGIC
+    FIXED_IO_0_ps_porb : inout STD_LOGIC
   );
   end component es;
 begin

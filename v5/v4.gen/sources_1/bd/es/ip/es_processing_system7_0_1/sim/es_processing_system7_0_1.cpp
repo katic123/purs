@@ -61,11 +61,28 @@
 
 
 #ifdef XILINX_SIMULATOR
-es_processing_system7_0_1::es_processing_system7_0_1(const sc_core::sc_module_name& nm) : es_processing_system7_0_1_sc(nm), MIO("MIO"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
+es_processing_system7_0_1::es_processing_system7_0_1(const sc_core::sc_module_name& nm) : es_processing_system7_0_1_sc(nm), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
 {
 
   // initialize pins
   mp_impl->MIO(MIO);
+  mp_impl->DDR_CAS_n(DDR_CAS_n);
+  mp_impl->DDR_CKE(DDR_CKE);
+  mp_impl->DDR_Clk_n(DDR_Clk_n);
+  mp_impl->DDR_Clk(DDR_Clk);
+  mp_impl->DDR_CS_n(DDR_CS_n);
+  mp_impl->DDR_DRSTB(DDR_DRSTB);
+  mp_impl->DDR_ODT(DDR_ODT);
+  mp_impl->DDR_RAS_n(DDR_RAS_n);
+  mp_impl->DDR_WEB(DDR_WEB);
+  mp_impl->DDR_BankAddr(DDR_BankAddr);
+  mp_impl->DDR_Addr(DDR_Addr);
+  mp_impl->DDR_VRN(DDR_VRN);
+  mp_impl->DDR_VRP(DDR_VRP);
+  mp_impl->DDR_DM(DDR_DM);
+  mp_impl->DDR_DQ(DDR_DQ);
+  mp_impl->DDR_DQS_n(DDR_DQS_n);
+  mp_impl->DDR_DQS(DDR_DQS);
   mp_impl->PS_SRSTB(PS_SRSTB);
   mp_impl->PS_CLK(PS_CLK);
   mp_impl->PS_PORB(PS_PORB);
@@ -82,11 +99,28 @@ void es_processing_system7_0_1::before_end_of_elaboration()
 
 
 #ifdef XM_SYSTEMC
-es_processing_system7_0_1::es_processing_system7_0_1(const sc_core::sc_module_name& nm) : es_processing_system7_0_1_sc(nm), MIO("MIO"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
+es_processing_system7_0_1::es_processing_system7_0_1(const sc_core::sc_module_name& nm) : es_processing_system7_0_1_sc(nm), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
 {
 
   // initialize pins
   mp_impl->MIO(MIO);
+  mp_impl->DDR_CAS_n(DDR_CAS_n);
+  mp_impl->DDR_CKE(DDR_CKE);
+  mp_impl->DDR_Clk_n(DDR_Clk_n);
+  mp_impl->DDR_Clk(DDR_Clk);
+  mp_impl->DDR_CS_n(DDR_CS_n);
+  mp_impl->DDR_DRSTB(DDR_DRSTB);
+  mp_impl->DDR_ODT(DDR_ODT);
+  mp_impl->DDR_RAS_n(DDR_RAS_n);
+  mp_impl->DDR_WEB(DDR_WEB);
+  mp_impl->DDR_BankAddr(DDR_BankAddr);
+  mp_impl->DDR_Addr(DDR_Addr);
+  mp_impl->DDR_VRN(DDR_VRN);
+  mp_impl->DDR_VRP(DDR_VRP);
+  mp_impl->DDR_DM(DDR_DM);
+  mp_impl->DDR_DQ(DDR_DQ);
+  mp_impl->DDR_DQS_n(DDR_DQS_n);
+  mp_impl->DDR_DQS(DDR_DQS);
   mp_impl->PS_SRSTB(PS_SRSTB);
   mp_impl->PS_CLK(PS_CLK);
   mp_impl->PS_PORB(PS_PORB);
@@ -103,11 +137,28 @@ void es_processing_system7_0_1::before_end_of_elaboration()
 
 
 #ifdef RIVIERA
-es_processing_system7_0_1::es_processing_system7_0_1(const sc_core::sc_module_name& nm) : es_processing_system7_0_1_sc(nm), MIO("MIO"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
+es_processing_system7_0_1::es_processing_system7_0_1(const sc_core::sc_module_name& nm) : es_processing_system7_0_1_sc(nm), MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
 {
 
   // initialize pins
   mp_impl->MIO(MIO);
+  mp_impl->DDR_CAS_n(DDR_CAS_n);
+  mp_impl->DDR_CKE(DDR_CKE);
+  mp_impl->DDR_Clk_n(DDR_Clk_n);
+  mp_impl->DDR_Clk(DDR_Clk);
+  mp_impl->DDR_CS_n(DDR_CS_n);
+  mp_impl->DDR_DRSTB(DDR_DRSTB);
+  mp_impl->DDR_ODT(DDR_ODT);
+  mp_impl->DDR_RAS_n(DDR_RAS_n);
+  mp_impl->DDR_WEB(DDR_WEB);
+  mp_impl->DDR_BankAddr(DDR_BankAddr);
+  mp_impl->DDR_Addr(DDR_Addr);
+  mp_impl->DDR_VRN(DDR_VRN);
+  mp_impl->DDR_VRP(DDR_VRP);
+  mp_impl->DDR_DM(DDR_DM);
+  mp_impl->DDR_DQ(DDR_DQ);
+  mp_impl->DDR_DQS_n(DDR_DQS_n);
+  mp_impl->DDR_DQS(DDR_DQS);
   mp_impl->PS_SRSTB(PS_SRSTB);
   mp_impl->PS_CLK(PS_CLK);
   mp_impl->PS_PORB(PS_PORB);
@@ -124,10 +175,27 @@ void es_processing_system7_0_1::before_end_of_elaboration()
 
 
 #ifdef VCSSYSTEMC
-es_processing_system7_0_1::es_processing_system7_0_1(const sc_core::sc_module_name& nm) : es_processing_system7_0_1_sc(nm),  MIO("MIO"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
+es_processing_system7_0_1::es_processing_system7_0_1(const sc_core::sc_module_name& nm) : es_processing_system7_0_1_sc(nm),  MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
 {
   // initialize pins
   mp_impl->MIO(MIO);
+  mp_impl->DDR_CAS_n(DDR_CAS_n);
+  mp_impl->DDR_CKE(DDR_CKE);
+  mp_impl->DDR_Clk_n(DDR_Clk_n);
+  mp_impl->DDR_Clk(DDR_Clk);
+  mp_impl->DDR_CS_n(DDR_CS_n);
+  mp_impl->DDR_DRSTB(DDR_DRSTB);
+  mp_impl->DDR_ODT(DDR_ODT);
+  mp_impl->DDR_RAS_n(DDR_RAS_n);
+  mp_impl->DDR_WEB(DDR_WEB);
+  mp_impl->DDR_BankAddr(DDR_BankAddr);
+  mp_impl->DDR_Addr(DDR_Addr);
+  mp_impl->DDR_VRN(DDR_VRN);
+  mp_impl->DDR_VRP(DDR_VRP);
+  mp_impl->DDR_DM(DDR_DM);
+  mp_impl->DDR_DQ(DDR_DQ);
+  mp_impl->DDR_DQS_n(DDR_DQS_n);
+  mp_impl->DDR_DQS(DDR_DQS);
   mp_impl->PS_SRSTB(PS_SRSTB);
   mp_impl->PS_CLK(PS_CLK);
   mp_impl->PS_PORB(PS_PORB);
@@ -147,10 +215,27 @@ void es_processing_system7_0_1::before_end_of_elaboration()
 
 
 #ifdef MTI_SYSTEMC
-es_processing_system7_0_1::es_processing_system7_0_1(const sc_core::sc_module_name& nm) : es_processing_system7_0_1_sc(nm),  MIO("MIO"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
+es_processing_system7_0_1::es_processing_system7_0_1(const sc_core::sc_module_name& nm) : es_processing_system7_0_1_sc(nm),  MIO("MIO"), DDR_CAS_n("DDR_CAS_n"), DDR_CKE("DDR_CKE"), DDR_Clk_n("DDR_Clk_n"), DDR_Clk("DDR_Clk"), DDR_CS_n("DDR_CS_n"), DDR_DRSTB("DDR_DRSTB"), DDR_ODT("DDR_ODT"), DDR_RAS_n("DDR_RAS_n"), DDR_WEB("DDR_WEB"), DDR_BankAddr("DDR_BankAddr"), DDR_Addr("DDR_Addr"), DDR_VRN("DDR_VRN"), DDR_VRP("DDR_VRP"), DDR_DM("DDR_DM"), DDR_DQ("DDR_DQ"), DDR_DQS_n("DDR_DQS_n"), DDR_DQS("DDR_DQS"), PS_SRSTB("PS_SRSTB"), PS_CLK("PS_CLK"), PS_PORB("PS_PORB")
 {
   // initialize pins
   mp_impl->MIO(MIO);
+  mp_impl->DDR_CAS_n(DDR_CAS_n);
+  mp_impl->DDR_CKE(DDR_CKE);
+  mp_impl->DDR_Clk_n(DDR_Clk_n);
+  mp_impl->DDR_Clk(DDR_Clk);
+  mp_impl->DDR_CS_n(DDR_CS_n);
+  mp_impl->DDR_DRSTB(DDR_DRSTB);
+  mp_impl->DDR_ODT(DDR_ODT);
+  mp_impl->DDR_RAS_n(DDR_RAS_n);
+  mp_impl->DDR_WEB(DDR_WEB);
+  mp_impl->DDR_BankAddr(DDR_BankAddr);
+  mp_impl->DDR_Addr(DDR_Addr);
+  mp_impl->DDR_VRN(DDR_VRN);
+  mp_impl->DDR_VRP(DDR_VRP);
+  mp_impl->DDR_DM(DDR_DM);
+  mp_impl->DDR_DQ(DDR_DQ);
+  mp_impl->DDR_DQS_n(DDR_DQS_n);
+  mp_impl->DDR_DQS(DDR_DQS);
   mp_impl->PS_SRSTB(PS_SRSTB);
   mp_impl->PS_CLK(PS_CLK);
   mp_impl->PS_PORB(PS_PORB);

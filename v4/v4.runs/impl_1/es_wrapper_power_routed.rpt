@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Mon Nov  9 06:36:44 2026
+| Date             : Mon Nov 16 20:25:11 2026
 | Host             : arch-t14s running 64-bit unknown
 | Command          : report_power -file es_wrapper_power_routed.rpt -pb es_wrapper_power_summary_routed.pb -rpx es_wrapper_power_routed.rpx
 | Design           : es_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.754        |
+| Total On-Chip Power (W)  | 0.760        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.637        |
-| Device Static (W)        | 0.116        |
+| Dynamic (W)              | 0.638        |
+| Device Static (W)        | 0.123        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 76.3         |
-| Junction Temperature (C) | 33.7         |
+| Max Ambient (C)          | 76.2         |
+| Junction Temperature (C) | 33.8         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -60,9 +60,9 @@ Table of Contents
 |   Others       |     0.000 |      134 |       --- |             --- |
 | Signals        |    <0.001 |       35 |       --- |             --- |
 | I/O            |    <0.001 |        3 |       200 |            1.50 |
-| PS7            |     0.635 |        1 |       --- |             --- |
-| Static Power   |     0.116 |          |           |                 |
-| Total          |     0.754 |          |           |                 |
+| PS7            |     0.636 |        1 |       --- |             --- |
+| Static Power   |     0.123 |          |           |                 |
+| Total          |     0.760 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -89,8 +89,8 @@ Table of Contents
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.018 |       0.015 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco_mio0 |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco_mio1 |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
@@ -148,12 +148,12 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| es_wrapper               |     0.637 |
-|   es_i                   |     0.636 |
+| es_wrapper               |     0.638 |
+|   es_i                   |     0.637 |
 |     led_blinker_0        |     0.001 |
 |       U0                 |     0.001 |
-|     processing_system7_0 |     0.635 |
-|       inst               |     0.635 |
+|     processing_system7_0 |     0.636 |
+|       inst               |     0.636 |
 +--------------------------+-----------+
 
 

@@ -1,0 +1,52 @@
+#include "xparameters.h"
+#include "xgpiops.h"
+#define LD9 7
+#define N_Pause 10000000
+XGpioPs Gpio;
+// LD9 is connected to MIO7
+// For dummy counter
+// Driver instance for GPIO Device
+int main(){
+// ============== Driver Initialization ================
+XGpioPs_Config *GpioConfigPtr;
+int Status;
+// XGpioPs_Config *XGpioPs_LookupConfig(u16 DeviceId);
+GpioConfigPtr = XGpioPs_LookupConfig (XPAR_PS7_GPIO_0_DEVICE_ID);
+Status = XGpioPs_CfgInitialize(&Gpio,
+GpioConfigPtr,
+GpioConfigPtr‐>BaseAddr);
+if (Status != XST_SUCCESS) {
+ //
+ XST_SUCCESS=0L; (xstatus.h)
+return XST_FAILURE;
+ //
+ XST_FAILURE=1L; (xstatus.h)
+}
+// =============== GPIO Initialization =================
+// void XGpioPs_SetDirectionPin(const XGpioPs *InstancePtr,
+//
+ u32 Pin, u32 Direction);
+XGpioPs_SetDirectionPin(&Gpio, LD9, 1);
+ // OUT
+// void XGpioPs_SetOutputEnablePin(const XGpioPs *InstancePtr,
+//
+ u32 Pin, u32 OpEnable);
+XGpioPs_SetOutputEnablePin(&Gpio, LD9, 1);
+ // ENABLED
+// ===============
+ GPIO Write
+ =================
+while(1){
+int k;
+// void XGpioPs_WritePin(const XGpioPs *InstancePtr,
+//
+ u32 Pin, u32 Data);
+XGpioPs_WritePin(&Gpio, LD9, 0x01);
+ // LED ON
+for (k=0;k<N_Pause;k++);
+XGpioPs_WritePin(&Gpio, LD9, 0x00);
+ // LED OFF
+for (k=0;k<N_Pause;k++);
+}
+return XST_SUCCESS;
+}

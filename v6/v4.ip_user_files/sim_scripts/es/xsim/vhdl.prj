@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/es/ipshared/96fb/led_blinker.vhd" \
+"../../../bd/es/ip/es_led_blinker_0_0/sim/es_led_blinker_0_0.vhd" \
+"../../../bd/es/sim/es.vhd" \
+
+nosort

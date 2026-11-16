@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Mon Nov  9 06:36:44 2026
+| Date         : Mon Nov 16 20:25:11 2026
 | Host         : arch-t14s running 64-bit unknown
 | Command      : report_timing_summary -max_paths 10 -file es_wrapper_timing_summary_routed.rpt -pb es_wrapper_timing_summary_routed.pb -rpx es_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : es_wrapper

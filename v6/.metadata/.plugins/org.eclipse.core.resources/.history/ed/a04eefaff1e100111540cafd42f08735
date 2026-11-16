@@ -1,0 +1,86 @@
+#include "xparameters.h"
+#include "xgpiops.h"
+#include "xuartps.h"
+
+#define UART_DEVICE_ID XPAR_PS7_UART_1_DEVICE_ID   // UART 1 on MIO 48..49
+
+#define LD9     7           // LD9 is connected to MIO7
+#define N_Pause 10000000    // For dummy counter
+
+XGpioPs Gpio;               // Driver instance for GPIO Device
+XUartPs Uart_Ps;            // Driver instance for UART
+
+int main()
+{
+    u8 SendString[] = "Hello World!\n\r";
+    int SentCount;
+
+    // ============== Driver Initialization ================
+    XGpioPs_Config *GpioConfigPtr;
+    XUartPs_Config *UartConfigPtr;
+    int StatusGpio;
+    int StatusUart;
+
+    // XUartPs_Config *XUartPs_LookupConfig(u16 DeviceId);
+    UartConfigPtr = XUartPs_LookupConfig(UART_DEVICE_ID);
+    if (NULL == UartConfigPtr)
+    {
+        return XST_FAILURE;
+    }
+
+    // XGpioPs_Config *XGpioPs_LookupConfig(u16 DeviceId);
+    GpioConfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+    if (NULL == GpioConfigPtr)
+    {
+        return XST_FAILURE;
+    }
+
+    StatusGpio = XGpioPs_CfgInitialize(&Gpio,
+                                       GpioConfigPtr,
+                                       GpioConfigPtr->BaseAddr);
+
+    StatusUart = XUartPs_CfgInitialize(&Uart_Ps,
+                                       UartConfigPtr,
+                                       UartConfigPtr->BaseAddress);
+
+    if (StatusGpio != XST_SUCCESS || StatusUart != XST_SUCCESS)   // XST_SUCCESS = 0L (xstatus.h)
+    {
+        return XST_FAILURE;                                       // XST_FAILURE = 1L (xstatus.h)
+    }
+
+    // =============== GPIO Initialization =================
+    // void XGpioPs_SetDirectionPin(const XGpioPs *InstancePtr,
+    //                              u32 Pin, u32 Direction);
+    XGpioPs_SetDirectionPin(&Gpio, LD9, 1);        // OUT
+
+    // void XGpioPs_SetOutputEnablePin(const XGpioPs *InstancePtr,
+    //                                 u32 Pin, u32 OpEnable);
+    XGpioPs_SetOutputEnablePin(&Gpio, LD9, 1);     // ENABLED
+
+    // =============== UART Initialization =================
+    XUartPs_SetBaudRate(&Uart_Ps, 115200);
+
+    SentCount = 0;
+    while (SentCount < (int)(sizeof(SendString) - 1))
+    {
+        SentCount += XUartPs_Send(&Uart_Ps, &SendString[SentCount], 1);
+    }
+
+    // ================== GPIO Write =======================
+    while (1)
+    {
+        volatile int k;
+
+        // void XGpioPs_WritePin(const XGpioPs *InstancePtr,
+        //                       u32 Pin, u32 Data);
+        XGpioPs_WritePin(&Gpio, LD9, 0x01);        // LED ON
+        for (k = 0; k < N_Pause; k++)
+            ;
+
+        XGpioPs_WritePin(&Gpio, LD9, 0x00);        // LED OFF
+        for (k = 0; k < N_Pause; k++)
+            ;
+    }
+
+    return XST_SUCCESS;     // never reached
+}

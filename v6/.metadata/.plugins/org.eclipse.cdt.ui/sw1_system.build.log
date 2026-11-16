@@ -1,0 +1,8 @@
+13:18:04 **** Clean-only build of configuration Debug for project sw1_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+13:18:04 Build Finished (took 111ms)
+

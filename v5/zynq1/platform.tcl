@@ -34,3 +34,18 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform active {zynq1}
+platform active {zynq1}
+platform active {zynq1}
+catch {platform remove zynq1}

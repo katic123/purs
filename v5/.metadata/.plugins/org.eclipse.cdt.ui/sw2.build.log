@@ -1,0 +1,25 @@
+20:20:06 **** Build of configuration Debug for project sw2 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/appl.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/appl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/leon/Desktop/katic_leon/v5/znyq2/export/znyq2/sw/znyq2/standalone_domain/bspinclude/include -MMD -MP -MF"src/appl.d" -MT"src/appl.o" -o "src/appl.o" "../src/appl.c"
+Finished building: ../src/appl.c
+ 
+Building target: sw2.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/leon/Desktop/katic_leon/v5/znyq2/export/znyq2/sw/znyq2/standalone_domain/bsplib/lib -o "sw2.elf" ./src/appl.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: sw2.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size sw2.elf  |tee "sw2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28348	   1168	   8344	  37860	   93e4	sw2.elf
+Finished building: sw2.elf.size
+ 
+
+20:20:06 Build Finished (took 163ms)
+

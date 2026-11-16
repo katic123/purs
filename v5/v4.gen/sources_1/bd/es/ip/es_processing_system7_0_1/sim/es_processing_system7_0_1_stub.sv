@@ -68,6 +68,23 @@ typedef bit bit_as_bool;
 (* SC_MODULE_EXPORT *)
 module es_processing_system7_0_1 (
   output bit [53 : 0] MIO,
+  output bit_as_bool DDR_CAS_n,
+  output bit_as_bool DDR_CKE,
+  output bit_as_bool DDR_Clk_n,
+  output bit_as_bool DDR_Clk,
+  output bit_as_bool DDR_CS_n,
+  output bit_as_bool DDR_DRSTB,
+  output bit_as_bool DDR_ODT,
+  output bit_as_bool DDR_RAS_n,
+  output bit_as_bool DDR_WEB,
+  output bit [2 : 0] DDR_BankAddr,
+  output bit [14 : 0] DDR_Addr,
+  output bit_as_bool DDR_VRN,
+  output bit_as_bool DDR_VRP,
+  output bit [3 : 0] DDR_DM,
+  output bit [31 : 0] DDR_DQ,
+  output bit [3 : 0] DDR_DQS_n,
+  output bit [3 : 0] DDR_DQS,
   output bit_as_bool PS_SRSTB,
   output bit_as_bool PS_CLK,
   output bit_as_bool PS_PORB
@@ -77,10 +94,27 @@ endmodule
 
 `ifdef XCELIUM
 (* XMSC_MODULE_EXPORT *)
-module es_processing_system7_0_1 (MIO,PS_SRSTB,PS_CLK,PS_PORB)
+module es_processing_system7_0_1 (MIO,DDR_CAS_n,DDR_CKE,DDR_Clk_n,DDR_Clk,DDR_CS_n,DDR_DRSTB,DDR_ODT,DDR_RAS_n,DDR_WEB,DDR_BankAddr,DDR_Addr,DDR_VRN,DDR_VRP,DDR_DM,DDR_DQ,DDR_DQS_n,DDR_DQS,PS_SRSTB,PS_CLK,PS_PORB)
 (* integer foreign = "SystemC";
 *);
   inout wire [53 : 0] MIO;
+  inout wire DDR_CAS_n;
+  inout wire DDR_CKE;
+  inout wire DDR_Clk_n;
+  inout wire DDR_Clk;
+  inout wire DDR_CS_n;
+  inout wire DDR_DRSTB;
+  inout wire DDR_ODT;
+  inout wire DDR_RAS_n;
+  inout wire DDR_WEB;
+  inout wire [2 : 0] DDR_BankAddr;
+  inout wire [14 : 0] DDR_Addr;
+  inout wire DDR_VRN;
+  inout wire DDR_VRP;
+  inout wire [3 : 0] DDR_DM;
+  inout wire [31 : 0] DDR_DQ;
+  inout wire [3 : 0] DDR_DQS_n;
+  inout wire [3 : 0] DDR_DQS;
   inout wire PS_SRSTB;
   inout wire PS_CLK;
   inout wire PS_PORB;
@@ -89,8 +123,25 @@ endmodule
 
 `ifdef RIVIERA
 (* SC_MODULE_EXPORT *)
-module es_processing_system7_0_1 (MIO,PS_SRSTB,PS_CLK,PS_PORB)
+module es_processing_system7_0_1 (MIO,DDR_CAS_n,DDR_CKE,DDR_Clk_n,DDR_Clk,DDR_CS_n,DDR_DRSTB,DDR_ODT,DDR_RAS_n,DDR_WEB,DDR_BankAddr,DDR_Addr,DDR_VRN,DDR_VRP,DDR_DM,DDR_DQ,DDR_DQS_n,DDR_DQS,PS_SRSTB,PS_CLK,PS_PORB)
   inout wire [53 : 0] MIO;
+  inout wire DDR_CAS_n;
+  inout wire DDR_CKE;
+  inout wire DDR_Clk_n;
+  inout wire DDR_Clk;
+  inout wire DDR_CS_n;
+  inout wire DDR_DRSTB;
+  inout wire DDR_ODT;
+  inout wire DDR_RAS_n;
+  inout wire DDR_WEB;
+  inout wire [2 : 0] DDR_BankAddr;
+  inout wire [14 : 0] DDR_Addr;
+  inout wire DDR_VRN;
+  inout wire DDR_VRP;
+  inout wire [3 : 0] DDR_DM;
+  inout wire [31 : 0] DDR_DQ;
+  inout wire [3 : 0] DDR_DQS_n;
+  inout wire [3 : 0] DDR_DQS;
   inout wire PS_SRSTB;
   inout wire PS_CLK;
   inout wire PS_PORB;

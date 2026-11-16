@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Mon Nov  9 06:36:44 2026
+| Date         : Mon Nov 16 20:25:11 2026
 | Host         : arch-t14s running 64-bit unknown
 | Command      : report_clock_utilization -file es_wrapper_clock_utilization_routed.rpt
 | Design       : es_wrapper

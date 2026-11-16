@@ -1,4 +1,6 @@
-#define N_Pause 10000000
+//  clk=100 MHz 1/100MHz=10^-8s  N_pause=k/10^-8=k*10^8
+
+#define N_Pause (1)*100000000 //1 second
 
 int main()
 {
@@ -30,5 +32,5 @@ int main()
             ;
     }
 
-    return 0; // never reached
+    return 0; // never reache
 }

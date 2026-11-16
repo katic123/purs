@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Nov  7 21:03:50 2026
-| Host         : DESKTOP-JMVCGS2 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Fri Nov 13 11:20:04 2026
+| Host         : arch-t14s running 64-bit unknown
 | Command      : report_timing_summary -max_paths 10 -file all_design_timing_summary_routed.rpt -pb all_design_timing_summary_routed.pb -rpx all_design_timing_summary_routed.rpx -warn_on_violation
 | Design       : all_design
 | Device       : 7z020-clg484
@@ -128,7 +128,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      7.184        0.000                      0                   52        0.088        0.000                      0                   52        4.500        0.000                       0                    28  
+      7.184        0.000                      0                   54        0.088        0.000                      0                   54        4.500        0.000                       0                    29  
 
 
 All user specified timing constraints are met.
@@ -151,7 +151,7 @@ clk    {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-clk                 7.184        0.000                      0                   52        0.088        0.000                      0                   52        4.500        0.000                       0                    28  
+clk                 7.184        0.000                      0                   54        0.088        0.000                      0                   54        4.500        0.000                       0                    29  
 
 
 ------------------------------------------------------------------------------------------------
@@ -218,7 +218,7 @@ Slack (MET) :             7.184ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.171     3.661    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.879     5.641    blinker/clk
+                         net (fo=28, routed)          1.879     5.641    blinker/clk
     SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y45        FDRE (Prop_fdre_C_Q)         0.456     6.097 r  blinker/clk_divider_reg[1]/Q
@@ -253,7 +253,7 @@ Slack (MET) :             7.184ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972    13.392    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.690    15.172    blinker/clk
+                         net (fo=28, routed)          1.690    15.172    blinker/clk
     SLICE_X113Y51        FDRE                                         r  blinker/clk_divider_reg[25]/C
                          clock pessimism              0.280    15.452    
                          clock uncertainty           -0.035    15.417    
@@ -263,6 +263,80 @@ Slack (MET) :             7.184ns  (required time - arrival time)
                          arrival time                          -8.294    
   -------------------------------------------------------------------
                          slack                                  7.184    
+
+Slack (MET) :             7.279ns  (required time - arrival time)
+  Source:                 blinker/clk_divider_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            blinker/clk_divider_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        2.558ns  (logic 1.939ns (75.804%)  route 0.619ns (24.196%))
+  Logic Levels:           7  (CARRY4=7)
+  Clock Path Skew:        -0.189ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.172ns = ( 15.172 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.641ns
+    Clock Pessimism Removal (CPR):    0.280ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.661    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
+                         net (fo=28, routed)          1.879     5.641    blinker/clk
+    SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y45        FDRE (Prop_fdre_C_Q)         0.456     6.097 r  blinker/clk_divider_reg[1]/Q
+                         net (fo=1, routed)           0.618     6.716    blinker/clk_divider_reg_n_0_[1]
+    SLICE_X113Y45        CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674     7.390 r  blinker/clk_divider_reg[0]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.390    blinker/clk_divider_reg[0]_i_1_n_0
+    SLICE_X113Y46        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.504 r  blinker/clk_divider_reg[4]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.504    blinker/clk_divider_reg[4]_i_1_n_0
+    SLICE_X113Y47        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.618 r  blinker/clk_divider_reg[8]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.618    blinker/clk_divider_reg[8]_i_1_n_0
+    SLICE_X113Y48        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.732 r  blinker/clk_divider_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.732    blinker/clk_divider_reg[12]_i_1_n_0
+    SLICE_X113Y49        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.846 r  blinker/clk_divider_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     7.846    blinker/clk_divider_reg[16]_i_1_n_0
+    SLICE_X113Y50        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.960 r  blinker/clk_divider_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.960    blinker/clk_divider_reg[20]_i_1_n_0
+    SLICE_X113Y51        CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     8.199 r  blinker/clk_divider_reg[24]_i_1/O[2]
+                         net (fo=1, routed)           0.000     8.199    blinker/clk_divider_reg[24]_i_1_n_5
+    SLICE_X113Y51        FDRE                                         r  blinker/clk_divider_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.972    13.392    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
+                         net (fo=28, routed)          1.690    15.172    blinker/clk
+    SLICE_X113Y51        FDRE                                         r  blinker/clk_divider_reg[26]/C
+                         clock pessimism              0.280    15.452    
+                         clock uncertainty           -0.035    15.417    
+    SLICE_X113Y51        FDRE (Setup_fdre_C_D)        0.062    15.479    blinker/clk_divider_reg[26]
+  -------------------------------------------------------------------
+                         required time                         15.479    
+                         arrival time                          -8.199    
+  -------------------------------------------------------------------
+                         slack                                  7.279    
 
 Slack (MET) :             7.295ns  (required time - arrival time)
   Source:                 blinker/clk_divider_reg[1]/C
@@ -292,7 +366,7 @@ Slack (MET) :             7.295ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.171     3.661    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.879     5.641    blinker/clk
+                         net (fo=28, routed)          1.879     5.641    blinker/clk
     SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y45        FDRE (Prop_fdre_C_Q)         0.456     6.097 r  blinker/clk_divider_reg[1]/Q
@@ -327,7 +401,7 @@ Slack (MET) :             7.295ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972    13.392    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.690    15.172    blinker/clk
+                         net (fo=28, routed)          1.690    15.172    blinker/clk
     SLICE_X113Y51        FDRE                                         r  blinker/clk_divider_reg[24]/C
                          clock pessimism              0.280    15.452    
                          clock uncertainty           -0.035    15.417    
@@ -366,7 +440,7 @@ Slack (MET) :             7.298ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.171     3.661    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.879     5.641    blinker/clk
+                         net (fo=28, routed)          1.879     5.641    blinker/clk
     SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y45        FDRE (Prop_fdre_C_Q)         0.456     6.097 r  blinker/clk_divider_reg[1]/Q
@@ -398,7 +472,7 @@ Slack (MET) :             7.298ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972    13.392    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.690    15.172    blinker/clk
+                         net (fo=28, routed)          1.690    15.172    blinker/clk
     SLICE_X113Y50        FDRE                                         r  blinker/clk_divider_reg[21]/C
                          clock pessimism              0.280    15.452    
                          clock uncertainty           -0.035    15.417    
@@ -437,7 +511,7 @@ Slack (MET) :             7.319ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.171     3.661    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.879     5.641    blinker/clk
+                         net (fo=28, routed)          1.879     5.641    blinker/clk
     SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y45        FDRE (Prop_fdre_C_Q)         0.456     6.097 r  blinker/clk_divider_reg[1]/Q
@@ -469,7 +543,7 @@ Slack (MET) :             7.319ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972    13.392    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.690    15.172    blinker/clk
+                         net (fo=28, routed)          1.690    15.172    blinker/clk
     SLICE_X113Y50        FDRE                                         r  blinker/clk_divider_reg[23]/C
                          clock pessimism              0.280    15.452    
                          clock uncertainty           -0.035    15.417    
@@ -508,7 +582,7 @@ Slack (MET) :             7.393ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.171     3.661    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.879     5.641    blinker/clk
+                         net (fo=28, routed)          1.879     5.641    blinker/clk
     SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y45        FDRE (Prop_fdre_C_Q)         0.456     6.097 r  blinker/clk_divider_reg[1]/Q
@@ -540,7 +614,7 @@ Slack (MET) :             7.393ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972    13.392    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.690    15.172    blinker/clk
+                         net (fo=28, routed)          1.690    15.172    blinker/clk
     SLICE_X113Y50        FDRE                                         r  blinker/clk_divider_reg[22]/C
                          clock pessimism              0.280    15.452    
                          clock uncertainty           -0.035    15.417    
@@ -579,7 +653,7 @@ Slack (MET) :             7.409ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.171     3.661    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.879     5.641    blinker/clk
+                         net (fo=28, routed)          1.879     5.641    blinker/clk
     SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y45        FDRE (Prop_fdre_C_Q)         0.456     6.097 r  blinker/clk_divider_reg[1]/Q
@@ -611,7 +685,7 @@ Slack (MET) :             7.409ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972    13.392    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.690    15.172    blinker/clk
+                         net (fo=28, routed)          1.690    15.172    blinker/clk
     SLICE_X113Y50        FDRE                                         r  blinker/clk_divider_reg[20]/C
                          clock pessimism              0.280    15.452    
                          clock uncertainty           -0.035    15.417    
@@ -650,7 +724,7 @@ Slack (MET) :             7.578ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.171     3.661    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.879     5.641    blinker/clk
+                         net (fo=28, routed)          1.879     5.641    blinker/clk
     SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y45        FDRE (Prop_fdre_C_Q)         0.456     6.097 r  blinker/clk_divider_reg[1]/Q
@@ -679,7 +753,7 @@ Slack (MET) :             7.578ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972    13.392    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.700    15.183    blinker/clk
+                         net (fo=28, routed)          1.700    15.183    blinker/clk
     SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[17]/C
                          clock pessimism              0.434    15.617    
                          clock uncertainty           -0.035    15.582    
@@ -718,7 +792,7 @@ Slack (MET) :             7.599ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.171     3.661    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.879     5.641    blinker/clk
+                         net (fo=28, routed)          1.879     5.641    blinker/clk
     SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y45        FDRE (Prop_fdre_C_Q)         0.456     6.097 r  blinker/clk_divider_reg[1]/Q
@@ -747,7 +821,7 @@ Slack (MET) :             7.599ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972    13.392    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.700    15.183    blinker/clk
+                         net (fo=28, routed)          1.700    15.183    blinker/clk
     SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[19]/C
                          clock pessimism              0.434    15.617    
                          clock uncertainty           -0.035    15.582    
@@ -786,11 +860,11 @@ Slack (MET) :             7.621ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.171     3.661    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.869     5.631    blinker/clk
+                         net (fo=28, routed)          1.869     5.631    blinker/clk
     SLICE_X112Y51        FDRE                                         r  blinker/reset_sync_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X112Y51        FDRE (Prop_fdre_C_Q)         0.518     6.149 r  blinker/reset_sync_reg/Q
-                         net (fo=26, routed)          1.227     7.377    blinker/reset_sync
+                         net (fo=27, routed)          1.227     7.377    blinker/reset_sync
     SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[0]/R
   -------------------------------------------------------------------    -------------------
 
@@ -800,64 +874,11 @@ Slack (MET) :             7.621ns  (required time - arrival time)
     Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972    13.392    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.699    15.182    blinker/clk
+                         net (fo=28, routed)          1.699    15.182    blinker/clk
     SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[0]/C
                          clock pessimism              0.280    15.462    
                          clock uncertainty           -0.035    15.426    
     SLICE_X113Y45        FDRE (Setup_fdre_C_R)       -0.429    14.997    blinker/clk_divider_reg[0]
-  -------------------------------------------------------------------
-                         required time                         14.997    
-                         arrival time                          -7.377    
-  -------------------------------------------------------------------
-                         slack                                  7.621    
-
-Slack (MET) :             7.621ns  (required time - arrival time)
-  Source:                 blinker/reset_sync_reg/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            blinker/clk_divider_reg[1]/R
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             clk
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
-  Data Path Delay:        1.745ns  (logic 0.518ns (29.679%)  route 1.227ns (70.321%))
-  Logic Levels:           0  
-  Clock Path Skew:        -0.170ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    5.182ns = ( 15.182 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.631ns
-    Clock Pessimism Removal (CPR):    0.280ns
-  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Total Input Jitter      (TIJ):    0.000ns
-    Discrete Jitter          (DJ):    0.000ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk rise edge)        0.000     0.000 r  
-    Y9                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           2.171     3.661    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.869     5.631    blinker/clk
-    SLICE_X112Y51        FDRE                                         r  blinker/reset_sync_reg/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X112Y51        FDRE (Prop_fdre_C_Q)         0.518     6.149 r  blinker/reset_sync_reg/Q
-                         net (fo=26, routed)          1.227     7.377    blinker/reset_sync
-    SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/R
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk rise edge)       10.000    10.000 r  
-    Y9                                                0.000    10.000 r  clk (IN)
-                         net (fo=0)                   0.000    10.000    clk
-    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           1.972    13.392    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          1.699    15.182    blinker/clk
-    SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[1]/C
-                         clock pessimism              0.280    15.462    
-                         clock uncertainty           -0.035    15.426    
-    SLICE_X113Y45        FDRE (Setup_fdre_C_R)       -0.429    14.997    blinker/clk_divider_reg[1]
   -------------------------------------------------------------------
                          required time                         14.997    
                          arrival time                          -7.377    
@@ -893,7 +914,7 @@ Slack (MET) :             0.088ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.663     0.921    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.641     1.588    blinker/clk
+                         net (fo=28, routed)          0.641     1.588    blinker/clk
     SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[19]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y49        FDRE (Prop_fdre_C_Q)         0.141     1.729 r  blinker/clk_divider_reg[19]/Q
@@ -913,7 +934,7 @@ Slack (MET) :             0.088ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.719     1.165    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.911     2.105    blinker/clk
+                         net (fo=28, routed)          0.911     2.105    blinker/clk
     SLICE_X113Y50        FDRE                                         r  blinker/clk_divider_reg[20]/C
                          clock pessimism             -0.247     1.858    
     SLICE_X113Y50        FDRE (Hold_fdre_C_D)         0.105     1.963    blinker/clk_divider_reg[20]
@@ -946,7 +967,7 @@ Slack (MET) :             0.099ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.663     0.921    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.641     1.588    blinker/clk
+                         net (fo=28, routed)          0.641     1.588    blinker/clk
     SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[19]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y49        FDRE (Prop_fdre_C_Q)         0.141     1.729 r  blinker/clk_divider_reg[19]/Q
@@ -966,7 +987,7 @@ Slack (MET) :             0.099ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.719     1.165    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.911     2.105    blinker/clk
+                         net (fo=28, routed)          0.911     2.105    blinker/clk
     SLICE_X113Y50        FDRE                                         r  blinker/clk_divider_reg[22]/C
                          clock pessimism             -0.247     1.858    
     SLICE_X113Y50        FDRE (Hold_fdre_C_D)         0.105     1.963    blinker/clk_divider_reg[22]
@@ -999,7 +1020,7 @@ Slack (MET) :             0.124ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.663     0.921    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.641     1.588    blinker/clk
+                         net (fo=28, routed)          0.641     1.588    blinker/clk
     SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[19]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y49        FDRE (Prop_fdre_C_Q)         0.141     1.729 r  blinker/clk_divider_reg[19]/Q
@@ -1019,7 +1040,7 @@ Slack (MET) :             0.124ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.719     1.165    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.911     2.105    blinker/clk
+                         net (fo=28, routed)          0.911     2.105    blinker/clk
     SLICE_X113Y50        FDRE                                         r  blinker/clk_divider_reg[21]/C
                          clock pessimism             -0.247     1.858    
     SLICE_X113Y50        FDRE (Hold_fdre_C_D)         0.105     1.963    blinker/clk_divider_reg[21]
@@ -1052,7 +1073,7 @@ Slack (MET) :             0.124ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.663     0.921    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.641     1.588    blinker/clk
+                         net (fo=28, routed)          0.641     1.588    blinker/clk
     SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[19]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y49        FDRE (Prop_fdre_C_Q)         0.141     1.729 r  blinker/clk_divider_reg[19]/Q
@@ -1072,7 +1093,7 @@ Slack (MET) :             0.124ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.719     1.165    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.911     2.105    blinker/clk
+                         net (fo=28, routed)          0.911     2.105    blinker/clk
     SLICE_X113Y50        FDRE                                         r  blinker/clk_divider_reg[23]/C
                          clock pessimism             -0.247     1.858    
     SLICE_X113Y50        FDRE (Hold_fdre_C_D)         0.105     1.963    blinker/clk_divider_reg[23]
@@ -1105,7 +1126,7 @@ Slack (MET) :             0.127ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.663     0.921    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.641     1.588    blinker/clk
+                         net (fo=28, routed)          0.641     1.588    blinker/clk
     SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[19]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y49        FDRE (Prop_fdre_C_Q)         0.141     1.729 r  blinker/clk_divider_reg[19]/Q
@@ -1128,7 +1149,7 @@ Slack (MET) :             0.127ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.719     1.165    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.911     2.105    blinker/clk
+                         net (fo=28, routed)          0.911     2.105    blinker/clk
     SLICE_X113Y51        FDRE                                         r  blinker/clk_divider_reg[24]/C
                          clock pessimism             -0.247     1.858    
     SLICE_X113Y51        FDRE (Hold_fdre_C_D)         0.105     1.963    blinker/clk_divider_reg[24]
@@ -1137,6 +1158,62 @@ Slack (MET) :             0.127ns  (arrival time - required time)
                          arrival time                           2.091    
   -------------------------------------------------------------------
                          slack                                  0.127    
+
+Slack (MET) :             0.138ns  (arrival time - required time)
+  Source:                 blinker/clk_divider_reg[19]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            blinker/clk_divider_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.514ns  (logic 0.405ns (78.814%)  route 0.109ns (21.186%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.105ns
+    Source Clock Delay      (SCD):    1.588ns
+    Clock Pessimism Removal (CPR):    0.247ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.921    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
+                         net (fo=28, routed)          0.641     1.588    blinker/clk
+    SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[19]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y49        FDRE (Prop_fdre_C_Q)         0.141     1.729 r  blinker/clk_divider_reg[19]/Q
+                         net (fo=1, routed)           0.108     1.837    blinker/clk_divider_reg_n_0_[19]
+    SLICE_X113Y49        CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.160     1.997 r  blinker/clk_divider_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     1.998    blinker/clk_divider_reg[16]_i_1_n_0
+    SLICE_X113Y50        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.039     2.037 r  blinker/clk_divider_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.037    blinker/clk_divider_reg[20]_i_1_n_0
+    SLICE_X113Y51        CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.065     2.102 r  blinker/clk_divider_reg[24]_i_1/O[2]
+                         net (fo=1, routed)           0.000     2.102    blinker/clk_divider_reg[24]_i_1_n_5
+    SLICE_X113Y51        FDRE                                         r  blinker/clk_divider_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.165    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
+                         net (fo=28, routed)          0.911     2.105    blinker/clk
+    SLICE_X113Y51        FDRE                                         r  blinker/clk_divider_reg[26]/C
+                         clock pessimism             -0.247     1.858    
+    SLICE_X113Y51        FDRE (Hold_fdre_C_D)         0.105     1.963    blinker/clk_divider_reg[26]
+  -------------------------------------------------------------------
+                         required time                         -1.963    
+                         arrival time                           2.102    
+  -------------------------------------------------------------------
+                         slack                                  0.138    
 
 Slack (MET) :             0.163ns  (arrival time - required time)
   Source:                 blinker/clk_divider_reg[19]/C
@@ -1161,7 +1238,7 @@ Slack (MET) :             0.163ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.663     0.921    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.641     1.588    blinker/clk
+                         net (fo=28, routed)          0.641     1.588    blinker/clk
     SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[19]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y49        FDRE (Prop_fdre_C_Q)         0.141     1.729 r  blinker/clk_divider_reg[19]/Q
@@ -1184,7 +1261,7 @@ Slack (MET) :             0.163ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.719     1.165    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.911     2.105    blinker/clk
+                         net (fo=28, routed)          0.911     2.105    blinker/clk
     SLICE_X113Y51        FDRE                                         r  blinker/clk_divider_reg[25]/C
                          clock pessimism             -0.247     1.858    
     SLICE_X113Y51        FDRE (Hold_fdre_C_D)         0.105     1.963    blinker/clk_divider_reg[25]
@@ -1217,7 +1294,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.663     0.921    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.641     1.588    blinker/clk
+                         net (fo=28, routed)          0.641     1.588    blinker/clk
     SLICE_X113Y47        FDRE                                         r  blinker/clk_divider_reg[11]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y47        FDRE (Prop_fdre_C_Q)         0.141     1.729 r  blinker/clk_divider_reg[11]/Q
@@ -1234,7 +1311,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.719     1.165    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.912     2.106    blinker/clk
+                         net (fo=28, routed)          0.912     2.106    blinker/clk
     SLICE_X113Y47        FDRE                                         r  blinker/clk_divider_reg[11]/C
                          clock pessimism             -0.518     1.588    
     SLICE_X113Y47        FDRE (Hold_fdre_C_D)         0.105     1.693    blinker/clk_divider_reg[11]
@@ -1267,7 +1344,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.663     0.921    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.641     1.588    blinker/clk
+                         net (fo=28, routed)          0.641     1.588    blinker/clk
     SLICE_X113Y48        FDRE                                         r  blinker/clk_divider_reg[15]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y48        FDRE (Prop_fdre_C_Q)         0.141     1.729 r  blinker/clk_divider_reg[15]/Q
@@ -1284,7 +1361,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.719     1.165    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.912     2.106    blinker/clk
+                         net (fo=28, routed)          0.912     2.106    blinker/clk
     SLICE_X113Y48        FDRE                                         r  blinker/clk_divider_reg[15]/C
                          clock pessimism             -0.518     1.588    
     SLICE_X113Y48        FDRE (Hold_fdre_C_D)         0.105     1.693    blinker/clk_divider_reg[15]
@@ -1317,7 +1394,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.663     0.921    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.641     1.588    blinker/clk
+                         net (fo=28, routed)          0.641     1.588    blinker/clk
     SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[19]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X113Y49        FDRE (Prop_fdre_C_Q)         0.141     1.729 r  blinker/clk_divider_reg[19]/Q
@@ -1334,63 +1411,13 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.719     1.165    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.912     2.106    blinker/clk
+                         net (fo=28, routed)          0.912     2.106    blinker/clk
     SLICE_X113Y49        FDRE                                         r  blinker/clk_divider_reg[19]/C
                          clock pessimism             -0.518     1.588    
     SLICE_X113Y49        FDRE (Hold_fdre_C_D)         0.105     1.693    blinker/clk_divider_reg[19]
   -------------------------------------------------------------------
                          required time                         -1.693    
                          arrival time                           1.945    
-  -------------------------------------------------------------------
-                         slack                                  0.252    
-
-Slack (MET) :             0.252ns  (arrival time - required time)
-  Source:                 blinker/clk_divider_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            blinker/clk_divider_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Path Group:             clk
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
-  Data Path Delay:        0.357ns  (logic 0.249ns (69.714%)  route 0.108ns (30.286%))
-  Logic Levels:           1  (CARRY4=1)
-  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.105ns
-    Source Clock Delay      (SCD):    1.587ns
-    Clock Pessimism Removal (CPR):    0.518ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk rise edge)        0.000     0.000 r  
-    Y9                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.663     0.921    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.640     1.587    blinker/clk
-    SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[3]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X113Y45        FDRE (Prop_fdre_C_Q)         0.141     1.728 r  blinker/clk_divider_reg[3]/Q
-                         net (fo=1, routed)           0.108     1.836    blinker/clk_divider_reg_n_0_[3]
-    SLICE_X113Y45        CARRY4 (Prop_carry4_S[3]_O[3])
-                                                      0.108     1.944 r  blinker/clk_divider_reg[0]_i_1/O[3]
-                         net (fo=1, routed)           0.000     1.944    blinker/clk_divider_reg[0]_i_1_n_4
-    SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk rise edge)        0.000     0.000 r  
-    Y9                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    clk
-    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  clk_IBUF_inst/O
-                         net (fo=1, routed)           0.719     1.165    clk_IBUF
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_IBUF_BUFG_inst/O
-                         net (fo=27, routed)          0.911     2.105    blinker/clk
-    SLICE_X113Y45        FDRE                                         r  blinker/clk_divider_reg[3]/C
-                         clock pessimism             -0.518     1.587    
-    SLICE_X113Y45        FDRE (Hold_fdre_C_D)         0.105     1.692    blinker/clk_divider_reg[3]
-  -------------------------------------------------------------------
-                         required time                         -1.692    
-                         arrival time                           1.944    
   -------------------------------------------------------------------
                          slack                                  0.252    
 
@@ -1422,10 +1449,10 @@ Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.50
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X113Y50  blinker/clk_divider_reg[23]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X113Y51  blinker/clk_divider_reg[24]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X113Y51  blinker/clk_divider_reg[25]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X113Y51  blinker/clk_divider_reg[26]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X112Y51  blinker/reset_sync_reg/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X113Y45  blinker/clk_divider_reg[0]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X113Y47  blinker/clk_divider_reg[10]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X113Y47  blinker/clk_divider_reg[11]/C
 High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X113Y45  blinker/clk_divider_reg[0]/C
 High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X113Y45  blinker/clk_divider_reg[1]/C
 High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X113Y45  blinker/clk_divider_reg[2]/C
