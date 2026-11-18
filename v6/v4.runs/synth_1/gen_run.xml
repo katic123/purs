@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1794851766">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1794863031">
   <File Type="VDS-TIMING-PB" Name="es_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="es_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="es_wrapper.dcp"/>
@@ -21,7 +21,7 @@
     <File Path="$PSRCDIR/sources_1/imports/hdl/es_wrapper.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PGENDIR/sources_1/bd/es/hdl/es_wrapper.vhd"/>
-        <Attr Name="ImportTime" Val="1794763601"/>
+        <Attr Name="ImportTime" Val="1794861741"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -51,9 +51,16 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="es_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="es_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="es_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="es_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="es_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="es_led_blinker_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="es_processing_system7_0_1"/>
 </GenRun>

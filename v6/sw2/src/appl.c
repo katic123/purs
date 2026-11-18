@@ -1,14 +1,17 @@
 #include "xparameters.h"
 #include "xgpiops.h"
 #include "xuartps.h"
+#include "xgpio.h"
 
-#define UART_DEVICE_ID XPAR_PS7_UART_1_DEVICE_ID   // UART 1 on MIO 48..49
+#define UART_DEVICE_ID XPAR_PS7_UART_1_DEVICE_ID // UART 1 on MIO 48..49
 
-#define LD9     7           // LD9 is connected to MIO7
-#define N_Pause 10000000    // For dummy counter
+#define LD9 7            // LD9 is connected to MIO7
+#define N_Pause 10000000 // For dummy counter
 
-XGpioPs Gpio;               // Driver instance for GPIO Device
-XUartPs Uart_Ps;            // Driver instance for UART
+XGpioPs Gpio;    // Driver instance for GPIO Device
+XUartPs Uart_Ps; // Driver instance for UART
+XGpio Gpio_Pl;   // Axi slave
+XGpio Gpio_Btn;
 
 int main()
 {
@@ -18,8 +21,13 @@ int main()
     // ============== Driver Initialization ================
     XGpioPs_Config *GpioConfigPtr;
     XUartPs_Config *UartConfigPtr;
+    XGpio_Config *GpioPlConfigPtr;
+    XGpio_Config *GpioBtnConfigPtr;
+
     int StatusGpio;
     int StatusUart;
+    int StatusGpioPl;
+    int StatusGpioBtn;
 
     // XUartPs_Config *XUartPs_LookupConfig(u16 DeviceId);
     UartConfigPtr = XUartPs_LookupConfig(UART_DEVICE_ID);
@@ -35,6 +43,17 @@ int main()
         return XST_FAILURE;
     }
 
+    GpioPlConfigPtr = XGpio_LookupConfig(XPAR_GPIO_0_DEVICE_ID);
+    if (NULL == GpioPlConfigPtr)
+    {
+        return XST_FAILURE;
+    }
+    GpioBtnConfigPtr = XGpio_LookupConfig(XPAR_AXI_GPIO_1_DEVICE_ID);
+    if (NULL == GpioBtnConfigPtr)
+    {
+        return XST_FAILURE;
+    }
+
     StatusGpio = XGpioPs_CfgInitialize(&Gpio,
                                        GpioConfigPtr,
                                        GpioConfigPtr->BaseAddr);
@@ -43,19 +62,22 @@ int main()
                                        UartConfigPtr,
                                        UartConfigPtr->BaseAddress);
 
-    if (StatusGpio != XST_SUCCESS || StatusUart != XST_SUCCESS)   // XST_SUCCESS = 0L (xstatus.h)
+    StatusGpioPl = XGpio_CfgInitialize(&Gpio_Pl, GpioPlConfigPtr, GpioPlConfigPtr->BaseAddress);
+
+    StatusGpioBtn = XGpio_CfgInitialize(&Gpio_Btn, GpioBtnConfigPtr, GpioBtnConfigPtr->BaseAddress);
+
+    if (StatusGpio != XST_SUCCESS || StatusUart != XST_SUCCESS || StatusGpioPl != XST_SUCCESS || StatusGpioBtn != XST_SUCCESS)
     {
-        return XST_FAILURE;                                       // XST_FAILURE = 1L (xstatus.h)
+        return XST_FAILURE;
     }
 
     // =============== GPIO Initialization =================
     // void XGpioPs_SetDirectionPin(const XGpioPs *InstancePtr,
     //                              u32 Pin, u32 Direction);
-    XGpioPs_SetDirectionPin(&Gpio, LD9, 1);        // OUT
-
-    // void XGpioPs_SetOutputEnablePin(const XGpioPs *InstancePtr,
-    //                                 u32 Pin, u32 OpEnable);
-    XGpioPs_SetOutputEnablePin(&Gpio, LD9, 1);     // ENABLED
+    XGpioPs_SetDirectionPin(&Gpio, LD9, 1); // OUT
+    XGpioPs_SetOutputEnablePin(&Gpio, LD9, 1);
+    XGpio_SetDataDirection(&Gpio_Pl, 1, 0x00);
+    XGpio_SetDataDirection(&Gpio_Btn, 1, 0x03);
 
     // =============== UART Initialization =================
     XUartPs_SetBaudRate(&Uart_Ps, 9600);
@@ -67,20 +89,52 @@ int main()
     }
 
     // ================== GPIO Write =======================
-    while (1)
+    for (int i = 0; i < 10; i++)
     {
         volatile int k;
 
         // void XGpioPs_WritePin(const XGpioPs *InstancePtr,
         //                       u32 Pin, u32 Data);
-        XGpioPs_WritePin(&Gpio, LD9, 0x01);        // LED ON
+        XGpioPs_WritePin(&Gpio, LD9, 0x01); // LED ON
         for (k = 0; k < N_Pause; k++)
             ;
 
-        XGpioPs_WritePin(&Gpio, LD9, 0x00);        // LED OFF
+        XGpioPs_WritePin(&Gpio, LD9, 0x00); // LED OFF
         for (k = 0; k < N_Pause; k++)
             ;
     }
 
-    return XST_SUCCESS;     // never reached
+    unsigned int j = 0x01;
+    int smjer = 1;
+
+    while (1)
+    {
+    	XGpio_DiscreteWrite(&Gpio_Pl, 1, j);
+        volatile int k;
+
+
+        for (k = 0; k < 200000; k++)
+        {
+            u32 tipke = XGpio_DiscreteRead(&Gpio_Btn, 1);
+            if (tipke & 0x01)
+                smjer = 1;
+            if (tipke & 0x02)
+                smjer = 0;
+        }
+
+        if (smjer)
+        {
+            j = j << 1;
+            if (j > 0x40)
+                j = 0x01;
+        }
+        else
+        {
+            j = j >> 1;
+            if (j == 0)
+                j = 0x40;
+        }
+    }
+
+    return XST_SUCCESS; // never reached
 }

@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/leon/Desktop/katic_leon/v5/v4.runs/es_led_blinker_0_0_synth_1'
+HD_PWD='/home/leon/Desktop/katic_leon/v6/v4.runs/es_led_blinker_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

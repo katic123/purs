@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 16 21:43:49 2026
+# Process ID: 89838
+# Current directory: /home/leon/Desktop/katic_leon/v6/v4.runs/es_proc_sys_reset_0_0_synth_1
+# Command line: vivado -log es_proc_sys_reset_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source es_proc_sys_reset_0_0.tcl
+# Log file: /home/leon/Desktop/katic_leon/v6/v4.runs/es_proc_sys_reset_0_0_synth_1/es_proc_sys_reset_0_0.vds
+# Journal file: /home/leon/Desktop/katic_leon/v6/v4.runs/es_proc_sys_reset_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source es_proc_sys_reset_0_0.tcl -notrace

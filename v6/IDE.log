@@ -1057,3 +1057,53 @@ Reason: No Platforms Found.
 20:23:57 INFO  : Platform repository initialization has completed.
 20:23:57 INFO  : Successfully done query RDI_DATADIR 
 20:23:57 INFO  : Registering command handlers for Vitis TCF services
+22:07:16 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v6/temp_xsdb_launch_script.tcl
+22:07:18 INFO  : XSCT server has started successfully.
+22:07:18 INFO  : plnx-install-location is set to ''
+22:07:18 INFO  : Successfully done setting XSCT server connection channel  
+22:07:18 INFO  : Successfully done setting workspace for the tool. 
+22:07:19 INFO  : Platform repository initialization has completed.
+22:07:19 INFO  : Successfully done query RDI_DATADIR 
+22:07:20 INFO  : Registering command handlers for Vitis TCF services
+22:08:00 INFO  : Hardware specification for platform project 'znyq2' is updated.
+22:08:21 INFO  : Result from executing command 'getProjects': znyq2
+22:08:21 INFO  : Result from executing command 'getPlatforms': znyq2|/home/leon/Desktop/katic_leon/v5/znyq2/export/znyq2/znyq2.xpfm
+22:09:09 INFO  : Successfully generated /home/leon/Desktop/katic_leon/v6/sw2/src/lscript.ld.
+22:09:09 INFO  : Applying linker script to all configurations of project sw2.
+22:09:09 INFO  : Setting rebuild state to true for all configurations of project sw2.
+22:10:39 INFO  : No changes in MSS file content so sources will not be generated.
+22:14:02 INFO  : Result from executing command 'getProjects': znyq2
+22:14:02 INFO  : Result from executing command 'getPlatforms': 
+22:14:23 INFO  : The hardware specfication used by project 'sw2' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+22:14:23 INFO  : The file '/home/leon/Desktop/katic_leon/v6/sw2/_ide/bitstream/zynq1.bit' stored in project is removed.
+22:14:23 INFO  : The updated bitstream files are copied from platform to folder '/home/leon/Desktop/katic_leon/v6/sw2/_ide/bitstream' in project 'sw2'.
+22:14:23 INFO  : The file '/home/leon/Desktop/katic_leon/v6/sw2/_ide/psinit/ps7_init.tcl' stored in project is removed.
+22:14:26 INFO  : The updated ps init files are copied from platform to folder '/home/leon/Desktop/katic_leon/v6/sw2/_ide/psinit' in project 'sw2'.
+22:15:55 INFO  : Result from executing command 'getProjects': znyq2
+22:15:55 INFO  : Result from executing command 'getPlatforms': znyq2|/home/leon/Desktop/katic_leon/v6/znyq2/export/znyq2/znyq2.xpfm
+22:15:58 INFO  : Checking for BSP changes to sync application flags for project 'sw2'...
+22:15:59 INFO  : Updating application flags with new BSP settings...
+22:15:59 INFO  : Successfully updated application flags for project sw2.
+22:35:52 INFO  : Checking for BSP changes to sync application flags for project 'sw2'...
+22:36:42 INFO  : Checking for BSP changes to sync application flags for project 'sw2'...
+22:37:59 INFO  : Checking for BSP changes to sync application flags for project 'sw2'...
+22:38:11 INFO  : Checking for BSP changes to sync application flags for project 'sw2'...
+22:38:24 INFO  : Checking for BSP changes to sync application flags for project 'sw2'...
+22:50:22 INFO  : Checking for BSP changes to sync application flags for project 'sw2'...
+22:50:36 INFO  : Result from executing command 'getProjects': znyq2
+22:50:36 INFO  : Result from executing command 'getPlatforms': znyq2|/home/leon/Desktop/katic_leon/v6/znyq2/export/znyq2/znyq2.xpfm
+22:50:39 INFO  : Checking for BSP changes to sync application flags for project 'sw2'...
+16:44:33 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v6/temp_xsdb_launch_script.tcl
+16:44:35 INFO  : XSCT server has started successfully.
+16:44:35 INFO  : Successfully done setting XSCT server connection channel  
+16:44:35 INFO  : plnx-install-location is set to ''
+16:44:35 INFO  : Successfully done setting workspace for the tool. 
+16:44:36 INFO  : Platform repository initialization has completed.
+16:44:36 INFO  : Successfully done query RDI_DATADIR 
+16:44:36 INFO  : Registering command handlers for Vitis TCF services
+17:00:14 INFO  : Result from executing command 'getProjects': znyq2
+17:00:14 INFO  : Result from executing command 'getPlatforms': znyq2|/home/leon/Desktop/katic_leon/v6/znyq2/export/znyq2/znyq2.xpfm
+17:00:17 INFO  : Checking for BSP changes to sync application flags for project 'sw2'...
+17:02:24 INFO  : Result from executing command 'getProjects': znyq2
+17:02:24 INFO  : Result from executing command 'getPlatforms': znyq2|/home/leon/Desktop/katic_leon/v6/znyq2/export/znyq2/znyq2.xpfm
+17:02:27 INFO  : Checking for BSP changes to sync application flags for project 'sw2'...

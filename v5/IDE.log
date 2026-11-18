@@ -1057,3 +1057,19 @@ Reason: No Platforms Found.
 20:23:57 INFO  : Platform repository initialization has completed.
 20:23:57 INFO  : Successfully done query RDI_DATADIR 
 20:23:57 INFO  : Registering command handlers for Vitis TCF services
+22:12:54 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v5/temp_xsdb_launch_script.tcl
+22:12:56 INFO  : XSCT server has started successfully.
+22:12:56 INFO  : plnx-install-location is set to ''
+22:12:56 INFO  : Successfully done setting XSCT server connection channel  
+22:12:56 INFO  : Successfully done setting workspace for the tool. 
+22:12:56 INFO  : Platform repository initialization has completed.
+22:12:56 INFO  : Successfully done query RDI_DATADIR 
+22:12:57 INFO  : Registering command handlers for Vitis TCF services
+16:37:37 INFO  : Launching XSCT server: xsct -n  -interactive /home/leon/Desktop/katic_leon/v5/temp_xsdb_launch_script.tcl
+16:37:39 INFO  : XSCT server has started successfully.
+16:37:39 INFO  : plnx-install-location is set to ''
+16:37:39 INFO  : Successfully done setting XSCT server connection channel  
+16:37:39 INFO  : Successfully done setting workspace for the tool. 
+16:37:39 INFO  : Platform repository initialization has completed.
+16:37:40 INFO  : Successfully done query RDI_DATADIR 
+16:37:40 INFO  : Registering command handlers for Vitis TCF services

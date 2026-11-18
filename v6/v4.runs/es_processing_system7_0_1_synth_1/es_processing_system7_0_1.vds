@@ -2,16 +2,16 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Nov 16 18:52:36 2026
-# Process ID: 23533
-# Current directory: /home/leon/Desktop/katic_leon/v5/v4.runs/es_processing_system7_0_1_synth_1
+# Start of session at: Mon Nov 16 21:42:58 2026
+# Process ID: 89475
+# Current directory: /home/leon/Desktop/katic_leon/v6/v4.runs/es_processing_system7_0_1_synth_1
 # Command line: vivado -log es_processing_system7_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source es_processing_system7_0_1.tcl
-# Log file: /home/leon/Desktop/katic_leon/v5/v4.runs/es_processing_system7_0_1_synth_1/es_processing_system7_0_1.vds
-# Journal file: /home/leon/Desktop/katic_leon/v5/v4.runs/es_processing_system7_0_1_synth_1/vivado.jou
+# Log file: /home/leon/Desktop/katic_leon/v6/v4.runs/es_processing_system7_0_1_synth_1/es_processing_system7_0_1.vds
+# Journal file: /home/leon/Desktop/katic_leon/v6/v4.runs/es_processing_system7_0_1_synth_1/vivado.jou
 #-----------------------------------------------------------
 source es_processing_system7_0_1.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/leon/Desktop/katic_leon/v5/my_cores'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/leon/Desktop/katic_leon/v6/my_cores'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/leon/Xilinx/Vivado/2020.2/data/ip'.
 Command: synth_design -top es_processing_system7_0_1 -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
@@ -20,12 +20,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23552
+INFO: [Synth 8-7075] Helper process launched with PID 89494
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2303.867 ; gain = 0.000 ; free physical = 3331 ; free virtual = 15065
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2303.863 ; gain = 0.000 ; free physical = 2196 ; free virtual = 15162
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'es_processing_system7_0_1' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:60]
-INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-6157] synthesizing module 'es_processing_system7_0_1' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:60]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
 	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
@@ -75,7 +75,7 @@ INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_sys
 	Parameter C_USE_S_AXI_HP1 bound to: 0 - type: integer 
 	Parameter C_USE_S_AXI_HP2 bound to: 0 - type: integer 
 	Parameter C_USE_S_AXI_HP3 bound to: 0 - type: integer 
-	Parameter C_USE_M_AXI_GP0 bound to: 0 - type: integer 
+	Parameter C_USE_M_AXI_GP0 bound to: 1 - type: integer 
 	Parameter C_USE_M_AXI_GP1 bound to: 0 - type: integer 
 	Parameter C_USE_S_AXI_GP0 bound to: 0 - type: integer 
 	Parameter C_USE_S_AXI_GP1 bound to: 0 - type: integer 
@@ -86,71 +86,71 @@ INFO: [Synth 8-6157] synthesizing module 'BIBUF' [/home/leon/Xilinx/Vivado/2020.
 INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (1#1) [/home/leon/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:730]
 INFO: [Synth 8-6157] synthesizing module 'PS7' [/home/leon/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:62034]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (2#1) [/home/leon/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:62034]
-INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (3#1) [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:186]
-INFO: [Synth 8-6155] done synthesizing module 'es_processing_system7_0_1' (4#1) [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (3#1) [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'es_processing_system7_0_1' (4#1) [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/synth/es_processing_system7_0_1.v:60]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2303.867 ; gain = 0.000 ; free physical = 3252 ; free virtual = 14989
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2303.863 ; gain = 0.000 ; free physical = 2169 ; free virtual = 15106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2303.867 ; gain = 0.000 ; free physical = 3961 ; free virtual = 15698
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2303.863 ; gain = 0.000 ; free physical = 2822 ; free virtual = 15778
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2303.867 ; gain = 0.000 ; free physical = 3961 ; free virtual = 15698
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2303.863 ; gain = 0.000 ; free physical = 2822 ; free virtual = 15778
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2303.867 ; gain = 0.000 ; free physical = 3958 ; free virtual = 15694
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2303.863 ; gain = 0.000 ; free physical = 2862 ; free virtual = 15819
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/es_processing_system7_0_1.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/es_processing_system7_0_1.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/es_processing_system7_0_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/es_processing_system7_0_1_propImpl.xdc].
+Parsing XDC File [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/es_processing_system7_0_1.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/es_processing_system7_0_1.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_processing_system7_0_1/es_processing_system7_0_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/es_processing_system7_0_1_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/es_processing_system7_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/leon/Desktop/katic_leon/v5/v4.runs/es_processing_system7_0_1_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/leon/Desktop/katic_leon/v5/v4.runs/es_processing_system7_0_1_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/leon/Desktop/katic_leon/v6/v4.runs/es_processing_system7_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/leon/Desktop/katic_leon/v6/v4.runs/es_processing_system7_0_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2367.898 ; gain = 0.000 ; free physical = 3886 ; free virtual = 15623
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2367.895 ; gain = 0.000 ; free physical = 2797 ; free virtual = 15736
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2367.898 ; gain = 0.000 ; free physical = 3886 ; free virtual = 15623
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2367.895 ; gain = 0.000 ; free physical = 2797 ; free virtual = 15736
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2367.898 ; gain = 64.031 ; free physical = 3882 ; free virtual = 15620
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2367.895 ; gain = 64.031 ; free physical = 2818 ; free virtual = 15755
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2367.898 ; gain = 64.031 ; free physical = 3882 ; free virtual = 15620
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2367.895 ; gain = 64.031 ; free physical = 2818 ; free virtual = 15755
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/leon/Desktop/katic_leon/v5/v4.runs/es_processing_system7_0_1_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/leon/Desktop/katic_leon/v6/v4.runs/es_processing_system7_0_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2367.898 ; gain = 64.031 ; free physical = 3887 ; free virtual = 15625
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2367.895 ; gain = 64.031 ; free physical = 2828 ; free virtual = 15765
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2367.898 ; gain = 64.031 ; free physical = 3878 ; free virtual = 15618
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2367.895 ; gain = 64.031 ; free physical = 2828 ; free virtual = 15765
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -172,25 +172,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2367.898 ; gain = 64.031 ; free physical = 3879 ; free virtual = 15633
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2367.895 ; gain = 64.031 ; free physical = 2830 ; free virtual = 15771
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2367.898 ; gain = 64.031 ; free physical = 3672 ; free virtual = 15424
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2367.895 ; gain = 64.031 ; free physical = 2587 ; free virtual = 15527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2367.898 ; gain = 64.031 ; free physical = 3672 ; free virtual = 15424
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2367.895 ; gain = 64.031 ; free physical = 2575 ; free virtual = 15515
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2367.898 ; gain = 64.031 ; free physical = 3651 ; free virtual = 15404
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2379.902 ; gain = 76.039 ; free physical = 2567 ; free virtual = 15508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -208,37 +208,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2368.852 ; gain = 64.984 ; free physical = 3651 ; free virtual = 15404
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2382.871 ; gain = 79.008 ; free physical = 2564 ; free virtual = 15505
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2368.852 ; gain = 64.984 ; free physical = 3651 ; free virtual = 15404
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2382.871 ; gain = 79.008 ; free physical = 2564 ; free virtual = 15505
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2368.852 ; gain = 64.984 ; free physical = 3651 ; free virtual = 15404
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2382.871 ; gain = 79.008 ; free physical = 2564 ; free virtual = 15505
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2368.852 ; gain = 64.984 ; free physical = 3651 ; free virtual = 15404
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2382.871 ; gain = 79.008 ; free physical = 2564 ; free virtual = 15505
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2368.852 ; gain = 64.984 ; free physical = 3651 ; free virtual = 15404
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2382.871 ; gain = 79.008 ; free physical = 2564 ; free virtual = 15505
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2368.852 ; gain = 64.984 ; free physical = 3651 ; free virtual = 15404
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2382.871 ; gain = 79.008 ; free physical = 2564 ; free virtual = 15505
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -259,26 +259,26 @@ Report Cell Usage:
 |3     |PS7   |     1|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2368.852 ; gain = 64.984 ; free physical = 3651 ; free virtual = 15404
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2382.871 ; gain = 79.008 ; free physical = 2564 ; free virtual = 15505
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2368.852 ; gain = 0.953 ; free physical = 3692 ; free virtual = 15445
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2368.859 ; gain = 64.984 ; free physical = 3692 ; free virtual = 15445
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2382.871 ; gain = 14.977 ; free physical = 2564 ; free virtual = 15505
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2382.879 ; gain = 79.008 ; free physical = 2564 ; free virtual = 15505
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2368.859 ; gain = 0.000 ; free physical = 3687 ; free virtual = 15444
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2382.879 ; gain = 0.000 ; free physical = 2661 ; free virtual = 15602
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2379.758 ; gain = 0.000 ; free physical = 3708 ; free virtual = 15465
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2392.777 ; gain = 0.000 ; free physical = 2615 ; free virtual = 15558
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 24 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2379.758 ; gain = 75.891 ; free physical = 3813 ; free virtual = 15570
-INFO: [Common 17-1381] The checkpoint '/home/leon/Desktop/katic_leon/v5/v4.runs/es_processing_system7_0_1_synth_1/es_processing_system7_0_1.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 2392.777 ; gain = 88.914 ; free physical = 2711 ; free virtual = 15654
+INFO: [Common 17-1381] The checkpoint '/home/leon/Desktop/katic_leon/v6/v4.runs/es_processing_system7_0_1_synth_1/es_processing_system7_0_1.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP es_processing_system7_0_1, cache-ID = b64eed33eafcf198
-INFO: [Common 17-1381] The checkpoint '/home/leon/Desktop/katic_leon/v5/v4.runs/es_processing_system7_0_1_synth_1/es_processing_system7_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP es_processing_system7_0_1, cache-ID = 6af8627e8e308687
+INFO: [Common 17-1381] The checkpoint '/home/leon/Desktop/katic_leon/v6/v4.runs/es_processing_system7_0_1_synth_1/es_processing_system7_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file es_processing_system7_0_1_utilization_synth.rpt -pb es_processing_system7_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 18:52:59 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 21:43:22 2026...

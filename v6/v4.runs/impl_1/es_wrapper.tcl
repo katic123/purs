@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/leon/Desktop/katic_leon/v5/v4.runs/impl_1/es_wrapper.tcl"
+  variable script "/home/leon/Desktop/katic_leon/v6/v4.runs/impl_1/es_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -125,28 +125,28 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-21925-arch-t14s/incrSyn
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z020clg484-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/leon/Desktop/katic_leon/v5/v4.cache/wt [current_project]
-  set_property parent.project_path /home/leon/Desktop/katic_leon/v5/v4.xpr [current_project]
-  set_property ip_repo_paths /home/leon/Desktop/katic_leon/v5/my_cores [current_project]
+  set_property webtalk.parent_dir /home/leon/Desktop/katic_leon/v6/v4.cache/wt [current_project]
+  set_property parent.project_path /home/leon/Desktop/katic_leon/v6/v4.xpr [current_project]
+  set_property ip_repo_paths /home/leon/Desktop/katic_leon/v6/my_cores [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/leon/Desktop/katic_leon/v5/v4.cache/ip [current_project]
+  set_property ip_output_repo /home/leon/Desktop/katic_leon/v6/v4.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/leon/Desktop/katic_leon/v5/v4.runs/synth_1/es_wrapper.dcp
+  add_files -quiet /home/leon/Desktop/katic_leon/v6/v4.runs/synth_1/es_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/leon/Desktop/katic_leon/v5/v4.srcs/sources_1/bd/es/es.bd
+  add_files /home/leon/Desktop/katic_leon/v6/v4.srcs/sources_1/bd/es/es.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/leon/Desktop/katic_leon/v5/v4.srcs/constrs_2/new/es.xdc
+  read_xdc /home/leon/Desktop/katic_leon/v6/v4.srcs/constrs_2/new/es.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -314,6 +314,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi es_wrapper.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

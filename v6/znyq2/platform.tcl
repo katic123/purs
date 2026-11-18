@@ -82,3 +82,22 @@ platform clean
 platform generate
 platform clean
 platform generate
+platform active {znyq2}
+platform config -updatehw {/home/leon/Desktop/katic_leon/v6/zynq1.xsa}
+platform clean
+platform generate
+platform clean
+bsp reload
+domain active {standalone_domain}
+bsp reload
+bsp write
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate

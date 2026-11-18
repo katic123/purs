@@ -12,4 +12,22 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==es_processi
 # IP: bd/es/ip/es_led_blinker_0_0/es_led_blinker_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==es_led_blinker_0_0 || ORIG_REF_NAME==es_led_blinker_0_0} -quiet] -quiet
 
-# XDC: /home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/es_ooc.xdc
+# IP: bd/es/ip/es_proc_sys_reset_0_0/es_proc_sys_reset_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==es_proc_sys_reset_0_0 || ORIG_REF_NAME==es_proc_sys_reset_0_0} -quiet] -quiet
+
+# IP: bd/es/ip/es_xbar_0/es_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==es_xbar_0 || ORIG_REF_NAME==es_xbar_0} -quiet] -quiet
+
+# IP: bd/es/ip/es_axi_interconnect_0_0/es_axi_interconnect_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==es_axi_interconnect_0_0 || ORIG_REF_NAME==es_axi_interconnect_0_0} -quiet] -quiet
+
+# IP: bd/es/ip/es_axi_gpio_0_0/es_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==es_axi_gpio_0_0 || ORIG_REF_NAME==es_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/es/ip/es_axi_gpio_1_0/es_axi_gpio_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==es_axi_gpio_1_0 || ORIG_REF_NAME==es_axi_gpio_1_0} -quiet] -quiet
+
+# IP: bd/es/ip/es_auto_pc_0/es_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==es_auto_pc_0 || ORIG_REF_NAME==es_auto_pc_0} -quiet] -quiet
+
+# XDC: /home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/es_ooc.xdc

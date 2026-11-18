@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Mon Nov 16 18:57:02 2026
+| Date             : Mon Nov 16 22:04:53 2026
 | Host             : arch-t14s running 64-bit unknown
 | Command          : report_power -file es_wrapper_power_routed.rpt -pb es_wrapper_power_summary_routed.pb -rpx es_wrapper_power_routed.rpx
 | Design           : es_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.671        |
+| Total On-Chip Power (W)  | 1.675        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.527        |
+| Dynamic (W)              | 1.531        |
 | Device Static (W)        | 0.144        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 65.7         |
@@ -49,21 +49,22 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+----------------+-----------+----------+-----------+-----------------+
-| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
-+----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      170 |       --- |             --- |
-|   CARRY4       |    <0.001 |        7 |     13300 |            0.05 |
-|   Register     |    <0.001 |       28 |    106400 |            0.03 |
-|   LUT as Logic |    <0.001 |        1 |     53200 |           <0.01 |
-|   Others       |     0.000 |      134 |       --- |             --- |
-| Signals        |    <0.001 |       35 |       --- |             --- |
-| I/O            |    <0.001 |        3 |       200 |            1.50 |
-| PS7            |     1.525 |        1 |       --- |             --- |
-| Static Power   |     0.144 |          |           |                 |
-| Total          |     1.671 |          |           |                 |
-+----------------+-----------+----------+-----------+-----------------+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.003 |        4 |       --- |             --- |
+| Slice Logic             |    <0.001 |     1815 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |      528 |     53200 |            0.99 |
+|   CARRY4                |    <0.001 |       25 |     13300 |            0.19 |
+|   Register              |    <0.001 |      826 |    106400 |            0.78 |
+|   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
+|   Others                |     0.000 |      209 |       --- |             --- |
+| Signals                 |    <0.001 |     1345 |       --- |             --- |
+| I/O                     |     0.001 |       12 |       200 |            6.00 |
+| PS7                     |     1.526 |        1 |       --- |             --- |
+| Static Power            |     0.144 |          |           |                 |
+| Total                   |     1.675 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -72,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.019 |       0.004 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -85,7 +86,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccpint   |       1.000 |     0.751 |       0.721 |      0.030 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.752 |       0.722 |      0.030 |       NA    | Unspecified | NA         |
 | Vccpaux   |       1.800 |     0.061 |       0.050 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.018 |       0.015 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |       NA    | Unspecified | NA         |
@@ -132,11 +133,12 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-------+--------+-----------------+
-| Clock | Domain | Constraint (ns) |
-+-------+--------+-----------------+
-| clk   | clk    |            10.0 |
-+-------+--------+-----------------+
++------------+------------------------------------------+-----------------+
+| Clock      | Domain                                   | Constraint (ns) |
++------------+------------------------------------------+-----------------+
+| clk        | clk                                      |            10.0 |
+| clk_fpga_0 | es_i/processing_system7_0/inst/FCLK_CLK0 |            20.0 |
++------------+------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -148,12 +150,14 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| es_wrapper               |     1.527 |
-|   es_i                   |     1.526 |
+| es_wrapper               |     1.531 |
+|   es_i                   |     1.530 |
+|     axi_interconnect_0   |     0.002 |
+|       s00_couplers       |     0.002 |
 |     led_blinker_0        |     0.001 |
 |       U0                 |     0.001 |
-|     processing_system7_0 |     1.525 |
-|       inst               |     1.525 |
+|     processing_system7_0 |     1.526 |
+|       inst               |     1.526 |
 +--------------------------+-----------+
 
 

@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Sun Nov 15 18:26:39 2026
+-- Date        : Mon Nov 16 21:43:45 2026
 -- Host        : arch-t14s running 64-bit unknown
 -- Command     : write_vhdl -force -mode funcsim
---               /home/leon/Desktop/katic_leon/v5/v4.gen/sources_1/bd/es/ip/es_led_blinker_0_0/es_led_blinker_0_0_sim_netlist.vhdl
+--               /home/leon/Desktop/katic_leon/v6/v4.gen/sources_1/bd/es/ip/es_led_blinker_0_0/es_led_blinker_0_0_sim_netlist.vhdl
 -- Design      : es_led_blinker_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

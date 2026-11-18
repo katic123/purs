@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
---Date        : Mon Nov 16 18:53:04 2026
+--Date        : Mon Nov 16 21:43:45 2026
 --Host        : arch-t14s running 64-bit unknown
 --Command     : generate_target es_wrapper.bd
 --Design      : es_wrapper
@@ -13,6 +13,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity es_wrapper is
   port (
+    BUTTON_tri_i : in STD_LOGIC_VECTOR ( 1 downto 0 );
     DDR_0_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
     DDR_0_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
     DDR_0_cas_n : inout STD_LOGIC;
@@ -35,6 +36,7 @@ entity es_wrapper is
     FIXED_IO_0_ps_porb : inout STD_LOGIC;
     FIXED_IO_0_ps_srstb : inout STD_LOGIC;
     LD0 : out STD_LOGIC;
+    LED_7_1_tri_o : out STD_LOGIC_VECTOR ( 6 downto 0 );
     clk : in STD_LOGIC;
     reset : in STD_LOGIC
   );
@@ -66,12 +68,15 @@ architecture STRUCTURE of es_wrapper is
     DDR_0_dm : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_0_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_0_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_0_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 )
+    DDR_0_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    LED_7_1_tri_o : out STD_LOGIC_VECTOR ( 6 downto 0 );
+    BUTTON_tri_i : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   end component es;
 begin
 es_i: component es
      port map (
+      BUTTON_tri_i(1 downto 0) => BUTTON_tri_i(1 downto 0),
       DDR_0_addr(14 downto 0) => DDR_0_addr(14 downto 0),
       DDR_0_ba(2 downto 0) => DDR_0_ba(2 downto 0),
       DDR_0_cas_n => DDR_0_cas_n,
@@ -94,6 +99,7 @@ es_i: component es
       FIXED_IO_0_ps_porb => FIXED_IO_0_ps_porb,
       FIXED_IO_0_ps_srstb => FIXED_IO_0_ps_srstb,
       LD0 => LD0,
+      LED_7_1_tri_o(6 downto 0) => LED_7_1_tri_o(6 downto 0),
       clk => clk,
       reset => reset
     );
